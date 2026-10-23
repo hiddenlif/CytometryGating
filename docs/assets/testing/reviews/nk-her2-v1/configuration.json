@@ -1,0 +1,93 @@
+{
+  "id": "nk-her2-v1",
+  "sample_id": "NK Cells_Her2_CAR.fcs",
+  "workspace": "Her2High.wsp",
+  "annotation_source": "docs/assets/testing/reviews/nk-her2-v1/user-guidance.png",
+  "annotation_sha256": "0da1678aa0882a76119c6de1f9cf294493e06c3ed17bda0234be18d4547456e0",
+  "coordinate_status": "Approximate manual digitization of the user-drawn orange line and eight blue vertex centers. Not machine-extracted exact gate coordinates.",
+  "scope": "This pictured sample only; no automatic transfer to other files.",
+  "first_gate": {
+    "gate_name": "No Debris",
+    "x_pixels": [
+      137,
+      748
+    ],
+    "x_values": [
+      0,
+      1
+    ],
+    "y_pixels": [
+      458,
+      82
+    ],
+    "y_values": [
+      0,
+      1
+    ],
+    "line_pixels": [
+      [
+        252,
+        497
+      ],
+      [
+        568,
+        47
+      ]
+    ],
+    "keep": "right of drawn line, intersected with the existing author polygon"
+  },
+  "second_gate": {
+    "gate_name": "Singlets",
+    "x_pixels": [
+      927,
+      1543
+    ],
+    "x_values": [
+      0,
+      1
+    ],
+    "y_pixels": [
+      465,
+      92
+    ],
+    "y_values": [
+      0,
+      0.5
+    ],
+    "polygon_pixels": [
+      [
+        1133,
+        245
+      ],
+      [
+        1293,
+        154
+      ],
+      [
+        1452,
+        60
+      ],
+      [
+        1475,
+        100
+      ],
+      [
+        1497,
+        138
+      ],
+      [
+        1337,
+        230
+      ],
+      [
+        1177,
+        322
+      ],
+      [
+        1155,
+        284
+      ]
+    ]
+  },
+  "downstream": "Keep original Live and CAR geometry, compensation and transforms; recompute memberships with revised parents."
+}

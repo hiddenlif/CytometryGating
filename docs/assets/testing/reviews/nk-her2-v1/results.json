@@ -1,0 +1,227 @@
+{
+  "id": "nk-her2-v1",
+  "sample": "NK Cells_Her2_CAR.fcs",
+  "workspace": "Her2High.wsp",
+  "events": 30000,
+  "source_checksum": "969a978ff526e47cb8c8111833523e8e33bc1733485716bf9d2a37d6f1425724",
+  "source_checksum_algorithm": "sha256",
+  "workspace_checksum": "0580803361b2c1bcddd1002bc9dd6449e9b4fe50bce340df7f5f7cb1b6080a1e",
+  "configuration": "data/gating-reviews/nk-her2-v1.json",
+  "configuration_sha256": "295b22c2a9cec50ddd86046566282aa5182a78b6cf799b4f8743ae1ff314609d",
+  "annotation_sha256": "0da1678aa0882a76119c6de1f9cf294493e06c3ed17bda0234be18d4547456e0",
+  "coordinate_status": "Approximate manual digitization of the user-drawn orange line and eight blue vertex centers. Not machine-extracted exact gate coordinates.",
+  "scope": "This pictured sample only; no automatic transfer to other files.",
+  "geometry": {
+    "intercept": 0.23303873431533006,
+    "slope_x_per_y": 0.43213675213675207,
+    "line_data_points": [
+      [
+        0.18821603927986907,
+        -0.10372340425531915
+      ],
+      [
+        0.7054009819967266,
+        1.0930851063829787
+      ]
+    ],
+    "singlet_vertices": [
+      [
+        0.3344155844155844,
+        0.2949061662198391
+      ],
+      [
+        0.5941558441558441,
+        0.4168900804289544
+      ],
+      [
+        0.8522727272727273,
+        0.5428954423592494
+      ],
+      [
+        0.8896103896103896,
+        0.48927613941018766
+      ],
+      [
+        0.9253246753246753,
+        0.4383378016085791
+      ],
+      [
+        0.6655844155844156,
+        0.31501340482573725
+      ],
+      [
+        0.40584415584415584,
+        0.19168900804289543
+      ],
+      [
+        0.37012987012987014,
+        0.24262734584450402
+      ]
+    ],
+    "keep": "x >= intercept + slope_x_per_y*y inside original No Debris polygon"
+  },
+  "gates": [
+    {
+      "gate": "No Debris",
+      "original_count": 22769,
+      "original_parent_count": 30000,
+      "original_percent_of_parent": 75.89666666666666,
+      "revised_count": 15700,
+      "revised_parent_count": 30000,
+      "revised_percent_of_parent": 52.333333333333336,
+      "excluded_vs_original": 7069,
+      "included_vs_original": 0
+    },
+    {
+      "gate": "Singlets",
+      "original_count": 21589,
+      "original_parent_count": 22769,
+      "original_percent_of_parent": 94.81751504238218,
+      "revised_count": 14849,
+      "revised_parent_count": 15700,
+      "revised_percent_of_parent": 94.57961783439491,
+      "excluded_vs_original": 7053,
+      "included_vs_original": 313
+    },
+    {
+      "gate": "Live",
+      "original_count": 14628,
+      "original_parent_count": 21589,
+      "original_percent_of_parent": 67.75672796331465,
+      "revised_count": 14655,
+      "revised_parent_count": 14849,
+      "revised_percent_of_parent": 98.69351471479561,
+      "excluded_vs_original": 253,
+      "included_vs_original": 280
+    },
+    {
+      "gate": "CAR",
+      "original_count": 5385,
+      "original_parent_count": 14628,
+      "original_percent_of_parent": 36.8129614438064,
+      "revised_count": 5431,
+      "revised_parent_count": 14655,
+      "revised_percent_of_parent": 37.0590242238144,
+      "excluded_vs_original": 81,
+      "included_vs_original": 127
+    }
+  ],
+  "plot_geometry": [
+    {
+      "gate": "No Debris",
+      "parent": "root",
+      "count": 15700,
+      "parent_count": 30000,
+      "percent_of_parent": 52.333333333333336,
+      "events_plotted": 30000,
+      "dimensions": [
+        {
+          "compensation_ref": null,
+          "id": "FSC-A",
+          "transformation_ref": "FSC-A",
+          "min": null,
+          "max": null
+        },
+        {
+          "compensation_ref": null,
+          "id": "SSC-A",
+          "transformation_ref": "SSC-A",
+          "min": null,
+          "max": null
+        }
+      ],
+      "geometry_membership_verified": true
+    },
+    {
+      "gate": "Singlets",
+      "parent": "No Debris",
+      "count": 14849,
+      "parent_count": 15700,
+      "percent_of_parent": 94.57961783439491,
+      "events_plotted": 15700,
+      "dimensions": [
+        {
+          "compensation_ref": null,
+          "id": "FSC-A",
+          "transformation_ref": "FSC-A",
+          "min": null,
+          "max": null
+        },
+        {
+          "compensation_ref": null,
+          "id": "FSC-H",
+          "transformation_ref": "FSC-H",
+          "min": null,
+          "max": null
+        }
+      ],
+      "geometry_membership_verified": true
+    },
+    {
+      "gate": "Live",
+      "parent": "Singlets",
+      "count": 14655,
+      "parent_count": 14849,
+      "percent_of_parent": 98.69351471479561,
+      "events_plotted": 14849,
+      "dimensions": [
+        {
+          "compensation_ref": null,
+          "id": "FSC-A",
+          "transformation_ref": "FSC-A",
+          "min": null,
+          "max": null
+        },
+        {
+          "compensation_ref": "Acquisition-defined",
+          "id": "7AAD-A",
+          "transformation_ref": "7AAD-A",
+          "min": null,
+          "max": null
+        }
+      ],
+      "geometry_membership_verified": true
+    },
+    {
+      "gate": "CAR",
+      "parent": "Live",
+      "count": 5431,
+      "parent_count": 14655,
+      "percent_of_parent": 37.0590242238144,
+      "events_plotted": 14655,
+      "dimensions": [
+        {
+          "compensation_ref": null,
+          "id": "FSC-A",
+          "transformation_ref": "FSC-A",
+          "min": 0.12184873949579832,
+          "max": 0.9831932773109243
+        },
+        {
+          "compensation_ref": "Acquisition-defined",
+          "id": "APC-A",
+          "transformation_ref": "APC-A",
+          "min": 1571.4491972787414,
+          "max": 4095.981801657582
+        }
+      ],
+      "geometry_membership_verified": true
+    }
+  ],
+  "checks": {
+    "analytic_first_gate": "passed",
+    "independent_singlet_polygon": "passed",
+    "unchanged_live_car_geometry": "passed",
+    "compensation_and_transforms_unchanged": "passed",
+    "event_permutation": "passed",
+    "event_subset": "passed",
+    "nested_membership_and_denominators": "passed",
+    "figure_geometry": "passed"
+  },
+  "interpretation": "User-guided manual development revision. This is not an automatic fit, exact vector transcription, or independent biological accuracy validation.",
+  "figure_sha256": {
+    "revised-hierarchy.png": "41ef84101c9441c8aa4f87b2f58ede30d85d65c42c832c22faccd298216328f6",
+    "before-after.png": "79b1aa2e8ea6ba636e8ca283372962b1181796fd957c95f71f25c8a3d16e1877",
+    "user-guidance.png": "0da1678aa0882a76119c6de1f9cf294493e06c3ed17bda0234be18d4547456e0"
+  }
+}

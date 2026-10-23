@@ -1,0 +1,172 @@
+{
+  "url_public_html": "https://figshare.com/articles/dataset/Characterization_of_Regulatory_T_cells/28817822/1",
+  "files": [
+    {
+      "id": 53756366,
+      "name": "Characterization_Regulatory-T-cells_cells_CD4-CD25-TCR-FOXP3.fcs",
+      "size": 2003400,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/53756366",
+      "supplied_md5": "fb66e739eedf4b1615c5c7bd30e2654d",
+      "computed_md5": "fb66e739eedf4b1615c5c7bd30e2654d",
+      "mimetype": "application/octet-stream"
+    },
+    {
+      "id": 53756375,
+      "name": "Characterization_Regulatory-T-cells_cells_unstained.fcs",
+      "size": 32023936,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/53756375",
+      "supplied_md5": "d4bd778b33a8ebf828277fa73a652be4",
+      "computed_md5": "d4bd778b33a8ebf828277fa73a652be4",
+      "mimetype": "application/octet-stream"
+    },
+    {
+      "id": 53756381,
+      "name": "Characterization_Regulatory-T-cells_Compensation_BL1-A.fcs",
+      "size": 1500660,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/53756381",
+      "supplied_md5": "933211a17f4a55e2469cf2d40fa7a916",
+      "computed_md5": "933211a17f4a55e2469cf2d40fa7a916",
+      "mimetype": "application/octet-stream"
+    },
+    {
+      "id": 53756384,
+      "name": "Characterization_Regulatory-T-cells_Compensation_RL1-A.fcs",
+      "size": 971852,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/53756384",
+      "supplied_md5": "82ba6077aca72eef9851cff1e50192ca",
+      "computed_md5": "82ba6077aca72eef9851cff1e50192ca",
+      "mimetype": "application/octet-stream"
+    },
+    {
+      "id": 53756387,
+      "name": "Characterization_Regulatory-T-cells_Compensation_UC.fcs",
+      "size": 1732528,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/53756387",
+      "supplied_md5": "005971e2a839fb6635e7c6098f9c7281",
+      "computed_md5": "005971e2a839fb6635e7c6098f9c7281",
+      "mimetype": "application/octet-stream"
+    },
+    {
+      "id": 53756390,
+      "name": "Characterization_Regulatory-T-cells_Compensation_VL1-A.fcs",
+      "size": 547120,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/53756390",
+      "supplied_md5": "4a7a22a8671acb6e8e02c1dd66518489",
+      "computed_md5": "4a7a22a8671acb6e8e02c1dd66518489",
+      "mimetype": "application/octet-stream"
+    },
+    {
+      "id": 53756393,
+      "name": "Characterization_Regulatory-T-cells_Compensation_YL1-A.fcs",
+      "size": 674912,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/53756393",
+      "supplied_md5": "aca9b0a140357ad03756e6c4916f2869",
+      "computed_md5": "aca9b0a140357ad03756e6c4916f2869",
+      "mimetype": "application/octet-stream"
+    },
+    {
+      "id": 53756396,
+      "name": "Characterization_Regulatory-T-cells_Compensation_YL4-A.fcs",
+      "size": 1073576,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/53756396",
+      "supplied_md5": "21e1514808d6283edefee3c8e42ef493",
+      "computed_md5": "21e1514808d6283edefee3c8e42ef493",
+      "mimetype": "application/octet-stream"
+    }
+  ],
+  "folder_structure": {
+    "53756366": "Characterization_Regulatory-T-cells_cells",
+    "53756375": "Characterization_Regulatory-T-cells_cells",
+    "53756381": "Characterization_Regulatory-T-cells_compensation",
+    "53756384": "Characterization_Regulatory-T-cells_compensation",
+    "53756387": "Characterization_Regulatory-T-cells_compensation",
+    "53756390": "Characterization_Regulatory-T-cells_compensation",
+    "53756393": "Characterization_Regulatory-T-cells_compensation",
+    "53756396": "Characterization_Regulatory-T-cells_compensation"
+  },
+  "authors": [
+    {
+      "id": 21143054,
+      "full_name": "Brittany Boribong",
+      "first_name": "Brittany",
+      "last_name": "Boribong",
+      "is_active": true,
+      "url_name": "Brittany_Boribong",
+      "orcid_id": ""
+    }
+  ],
+  "custom_fields": [],
+  "figshare_url": "https://figshare.com/articles/dataset/Characterization_of_Regulatory_T_cells/28817822",
+  "download_disabled": false,
+  "description": "<p dir=\"ltr\">Flow cytometry data for characterization of Primary Human Regulatory T cells where cells that are CD4+CD25+FOXP3+ are denoted as Regulatory T cells. </p>",
+  "funding": null,
+  "funding_list": [],
+  "version": 1,
+  "status": "public",
+  "size": 40527984,
+  "created_date": "2025-04-17T15:40:51Z",
+  "modified_date": "2025-04-17T15:40:51Z",
+  "is_public": true,
+  "is_confidential": false,
+  "is_metadata_record": false,
+  "confidential_reason": "",
+  "metadata_reason": "",
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "tags": [
+    "Regulatory T cells"
+  ],
+  "keywords": [
+    "Regulatory T cells"
+  ],
+  "categories": [
+    {
+      "id": 24616,
+      "title": "Cellular immunology",
+      "parent_id": 24604,
+      "path": "/24457/24604/24616",
+      "source_id": "320404",
+      "taxonomy_id": 100
+    }
+  ],
+  "references": [],
+  "has_linked_file": false,
+  "citation": "Boribong, Brittany (2025). Characterization of Regulatory T cells. figshare. Dataset. https://doi.org/10.6084/m9.figshare.28817822.v1",
+  "related_materials": [],
+  "is_embargoed": false,
+  "embargo_date": null,
+  "embargo_type": null,
+  "embargo_title": "",
+  "embargo_reason": "",
+  "embargo_options": [],
+  "id": 28817822,
+  "title": "Characterization of Regulatory T cells",
+  "doi": "10.6084/m9.figshare.28817822.v1",
+  "handle": "",
+  "url": "https://api.figshare.com/v2/articles/28817822",
+  "published_date": "2025-04-17T15:40:51Z",
+  "thumb": "",
+  "defined_type": 3,
+  "defined_type_name": "dataset",
+  "group_id": null,
+  "url_private_api": "https://api.figshare.com/v2/account/articles/28817822",
+  "url_public_api": "https://api.figshare.com/v2/articles/28817822",
+  "url_private_html": "https://figshare.com/account/articles/28817822",
+  "timeline": {
+    "posted": "2025-04-17T15:40:51",
+    "firstOnline": "2025-04-17"
+  },
+  "resource_title": null,
+  "resource_doi": null
+}

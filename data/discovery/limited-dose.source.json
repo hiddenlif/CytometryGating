@@ -1,0 +1,369 @@
+{
+  "created": "2026-05-27T11:57:50.778234+00:00",
+  "modified": "2026-07-17T07:54:36.761476+00:00",
+  "id": 14711865,
+  "conceptrecid": "14711864",
+  "doi": "10.5281/zenodo.14711865",
+  "conceptdoi": "10.5281/zenodo.14711864",
+  "doi_url": "https://doi.org/10.5281/zenodo.14711865",
+  "metadata": {
+    "title": "A Distinct CAR-T Cell Phenotype Mediates Therapeutic Response at Limited Doses",
+    "doi": "10.5281/zenodo.14711865",
+    "publication_date": "2025-01-21",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Yousefian, Schayan",
+        "affiliation": null,
+        "orcid": "0000-0003-0902-0369"
+      }
+    ],
+    "resource_type": {
+      "title": "Data paper",
+      "type": "publication",
+      "subtype": "datapaper"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14711864"
+          }
+        }
+      ]
+    }
+  },
+  "title": "A Distinct CAR-T Cell Phenotype Mediates Therapeutic Response at Limited Doses",
+  "links": {
+    "self": "https://zenodo.org/api/records/14711865",
+    "self_html": "https://zenodo.org/records/14711865",
+    "preview_html": "https://zenodo.org/records/14711865?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14711865",
+    "self_doi": "https://doi.org/10.5281/zenodo.14711865",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14711865",
+    "reserve_doi": "https://zenodo.org/api/records/14711865/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14711864",
+    "parent_html": "https://zenodo.org/records/14711864",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14711864",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14711864",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14711865/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14711865/sequence/default",
+    "files": "https://zenodo.org/api/records/14711865/files",
+    "media_files": "https://zenodo.org/api/records/14711865/media-files",
+    "latest": "https://zenodo.org/api/records/14711865/versions/latest",
+    "latest_html": "https://zenodo.org/records/14711865/latest",
+    "versions": "https://zenodo.org/api/records/14711865/versions",
+    "draft": "https://zenodo.org/api/records/14711865/draft",
+    "access_links": "https://zenodo.org/api/records/14711865/access/links",
+    "access_grants": "https://zenodo.org/api/records/14711865/access/grants",
+    "access_users": "https://zenodo.org/api/records/14711865/access/users",
+    "access_request": "https://zenodo.org/api/records/14711865/access/request",
+    "access": "https://zenodo.org/api/records/14711865/access",
+    "communities": "https://zenodo.org/api/records/14711865/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14711865/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14711865/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14711865/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/14711865/quota-increase",
+    "requests": "https://zenodo.org/api/records/14711865/requests"
+  },
+  "updated": "2026-07-17T07:54:36.761476+00:00",
+  "recid": "14711865",
+  "revision": 6,
+  "files": [
+    {
+      "id": "37147906-28d1-4cca-a43a-b8286ae6a121",
+      "key": "Figure7_Source_data_Yousefian_etal_2026.xlsx",
+      "size": 20294,
+      "checksum": "md5:ef210c396be4444cf2f505f45e093182",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/Figure7_Source_data_Yousefian_etal_2026.xlsx/content"
+      }
+    },
+    {
+      "id": "25b8f3eb-37d6-4dd3-957a-de6128fcf459",
+      "key": "Figure5_Source_data_Yousefian_etal_2026.xlsx",
+      "size": 6925163,
+      "checksum": "md5:d2f5a3683db8d90ebf60c985201881bb",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/Figure5_Source_data_Yousefian_etal_2026.xlsx/content"
+      }
+    },
+    {
+      "id": "ed2c5231-039a-4ab4-a576-d7e71c7afd22",
+      "key": "FigureS1_Source_data_Yousefian_etal_2026.xlsx",
+      "size": 24232,
+      "checksum": "md5:bb74acbf853491fc812a744df7f2c2a2",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/FigureS1_Source_data_Yousefian_etal_2026.xlsx/content"
+      }
+    },
+    {
+      "id": "46bbdcfc-cfbf-4bf6-a9a0-2e25bd7706e3",
+      "key": "FigureS7_Source_data_Yousefian_etal_2026.xlsx",
+      "size": 25317,
+      "checksum": "md5:d04a2194e9abd873572974fbe55bbe56",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/FigureS7_Source_data_Yousefian_etal_2026.xlsx/content"
+      }
+    },
+    {
+      "id": "8317adf9-e703-42c9-a527-02f1bd7740a9",
+      "key": "FigureS9_Source_data_Yousefian_etal_2026.xlsx",
+      "size": 13701,
+      "checksum": "md5:5d498111046ce271823cb981f1f3e8b9",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/FigureS9_Source_data_Yousefian_etal_2026.xlsx/content"
+      }
+    },
+    {
+      "id": "a1b29b4d-6d45-4888-9a0f-b88365b38c75",
+      "key": "Figure2_Source_data_Yousefian_etal_2026.xlsx",
+      "size": 13731485,
+      "checksum": "md5:73fdd9f4c82693842d7378ede770f0db",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/Figure2_Source_data_Yousefian_etal_2026.xlsx/content"
+      }
+    },
+    {
+      "id": "6e452538-8bd8-402e-827e-184f91a82503",
+      "key": "clinical_metadata_Yousefian_etal_2026.csv",
+      "size": 4417,
+      "checksum": "md5:c1fddb04e1e20293a7876ce66216a71b",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/clinical_metadata_Yousefian_etal_2026.csv/content"
+      }
+    },
+    {
+      "id": "cb693f87-a695-498d-a6a7-005545e2e3f7",
+      "key": "Fig4_A_sc_proteogenomics_all_cells_sobj.rds",
+      "size": 6374960884,
+      "checksum": "md5:58eaeedae2f5f53681e2b336bf26a012",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/Fig4_A_sc_proteogenomics_all_cells_sobj.rds/content"
+      }
+    },
+    {
+      "id": "54c71cea-efec-42c3-b6e6-7b265ba50ddd",
+      "key": "Fig1_C_CARproduct_overview_allCells_sobj.rds",
+      "size": 482738969,
+      "checksum": "md5:acab18735e2f7c6fb24aa83d22b17068",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/Fig1_C_CARproduct_overview_allCells_sobj.rds/content"
+      }
+    },
+    {
+      "id": "22edddb7-1da7-4e57-aa41-56bf31e75086",
+      "key": "Fig1_C_CARproduct_overview_sketched_sobj.rds",
+      "size": 58684174,
+      "checksum": "md5:fc0091de022fc84e11f6b01ecc8fc85f",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/Fig1_C_CARproduct_overview_sketched_sobj.rds/content"
+      }
+    },
+    {
+      "id": "0920e2e4-2a10-43a0-b427-c89fe5054f85",
+      "key": "Fig1_E_CARproduct_CD4T_sketched_sobj.rds",
+      "size": 92843921,
+      "checksum": "md5:3e658d1cd78020bab8b968d41f4ebe34",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/Fig1_E_CARproduct_CD4T_sketched_sobj.rds/content"
+      }
+    },
+    {
+      "id": "5b6c758c-86e1-4a9a-87ca-9b350b99f2a0",
+      "key": "Fig1_D_CARproduct_CD8T_sketched_sobj.rds",
+      "size": 92074949,
+      "checksum": "md5:b2d8565de88a7f05cc9a324f4e7b7a08",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/Fig1_D_CARproduct_CD8T_sketched_sobj.rds/content"
+      }
+    },
+    {
+      "id": "1c83d02b-1722-4844-be83-cfd441657608",
+      "key": "Fig3_A_premanufacturing_PBMCs_sketched_sobj.rds",
+      "size": 100057092,
+      "checksum": "md5:1239dbb07f6b02242c2b8164d96180b7",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/Fig3_A_premanufacturing_PBMCs_sketched_sobj.rds/content"
+      }
+    },
+    {
+      "id": "a16218c1-a934-4ab2-afb1-295f0e556e5e",
+      "key": "predict_cluster_labels_function.R",
+      "size": 4114,
+      "checksum": "md5:65d9168d76e9ea2e1f538863b533a860",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/predict_cluster_labels_function.R/content"
+      }
+    },
+    {
+      "id": "9315d630-9c18-4b8d-ba91-5cb1200a8c03",
+      "key": "wrapper_functions_sketching.R",
+      "size": 7600,
+      "checksum": "md5:f3db2e231a099cd59881d63415f07faa",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/wrapper_functions_sketching.R/content"
+      }
+    },
+    {
+      "id": "d41cdd8c-979d-42c4-bda5-35438e4ce5ca",
+      "key": "DA_seq_workflow.R",
+      "size": 1999,
+      "checksum": "md5:5ca7f184edd81694888f741364bebe83",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/DA_seq_workflow.R/content"
+      }
+    },
+    {
+      "id": "4ba29467-3101-4852-845b-5f3434faa8a4",
+      "key": "calculate_celltype_freq.R",
+      "size": 3175,
+      "checksum": "md5:43c31a39a0a0e9b759bf9157f29183bd",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/calculate_celltype_freq.R/content"
+      }
+    },
+    {
+      "id": "694ccce2-cf69-402c-ae44-d2a37c640c90",
+      "key": "log2FC_plots.R",
+      "size": 4481,
+      "checksum": "md5:17b1d4951c5c8f864a00486d2bbb1d75",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/log2FC_plots.R/content"
+      }
+    },
+    {
+      "id": "77d884ff-043c-4c9c-a83c-d4aaca3a1b85",
+      "key": "FigureS3_Source_data_Yousefian_etal_2026.xlsx",
+      "size": 13469538,
+      "checksum": "md5:da910ba367336eae81442fd4bb597aa2",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/FigureS3_Source_data_Yousefian_etal_2026.xlsx/content"
+      }
+    },
+    {
+      "id": "f2f69b1c-7d89-44c4-9fd3-55bed7e10333",
+      "key": "FigureS4_Source_data_Yousefian_etal_2026.xlsx",
+      "size": 13466,
+      "checksum": "md5:589a17568ad1e984e3eceb0e292dff4f",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/FigureS4_Source_data_Yousefian_etal_2026.xlsx/content"
+      }
+    },
+    {
+      "id": "ff45957f-faed-4642-8872-a6d1efaa37a4",
+      "key": "FigureS5_Source_data_Yousefian_etal_2026.xlsx",
+      "size": 15804,
+      "checksum": "md5:835fffb6bb7befca5f1cb49b6092b1b0",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/FigureS5_Source_data_Yousefian_etal_2026.xlsx/content"
+      }
+    },
+    {
+      "id": "65f20838-6168-47a9-9fe7-e51ffd3bc85f",
+      "key": "Figure4_Source_data_Yousefian_etal_2026.xlsx",
+      "size": 11411132,
+      "checksum": "md5:6b5bebbca988689e2f2d37857fb65dff",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/Figure4_Source_data_Yousefian_etal_2026.xlsx/content"
+      }
+    },
+    {
+      "id": "934a98ca-141f-4d1c-ac47-2765e6a7a142",
+      "key": "Figure3_Source_data_Yousefian_etal_2026.xlsx",
+      "size": 14108,
+      "checksum": "md5:6e8b5d8b19a976b900f86ea4aed4db1c",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/Figure3_Source_data_Yousefian_etal_2026.xlsx/content"
+      }
+    },
+    {
+      "id": "32d163b7-50b4-4001-82ac-ffb62067277d",
+      "key": "FigureS8_Source_data_Yousefian_etal_2026.xlsx",
+      "size": 62890,
+      "checksum": "md5:7b844f22dcfdec2859ea5f815da87ed4",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/FigureS8_Source_data_Yousefian_etal_2026.xlsx/content"
+      }
+    },
+    {
+      "id": "5bbebcc9-c14e-4654-90df-cf1153584240",
+      "key": "Fig5F.csv",
+      "size": 18839572,
+      "checksum": "md5:a7649d4f0f8806df2f89c890ef9a2893",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/Fig5F.csv/content"
+      }
+    },
+    {
+      "id": "0b934c64-55e6-408f-91f5-1c4f7fc5d6f1",
+      "key": "FigureS6_Source_data_Yousefian_etal_2026.xlsx",
+      "size": 7359570,
+      "checksum": "md5:2b04c424cac0a1b06ce9f4aade7f09e6",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/FigureS6_Source_data_Yousefian_etal_2026.xlsx/content"
+      }
+    },
+    {
+      "id": "12fde2d5-5336-42f3-9044-7be01d7e2029",
+      "key": "Figure6_Source_data_Yousefian_etal_2026.xlsx",
+      "size": 18572,
+      "checksum": "md5:5929e67f1f567fc0db2c0a74b684a440",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/Figure6_Source_data_Yousefian_etal_2026.xlsx/content"
+      }
+    },
+    {
+      "id": "155263fc-f265-4197-86ef-6d1c82a66ad1",
+      "key": "Figure1_Source_data_Yousefian_etal_2026.xlsx",
+      "size": 25327951,
+      "checksum": "md5:085519854fb05625afd04a0a1563ad5a",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/Figure1_Source_data_Yousefian_etal_2026.xlsx/content"
+      }
+    },
+    {
+      "id": "ead64073-ad4a-40e8-92b2-3cc9f0c90249",
+      "key": "FigureS2_Source_data_Yousefian_etal_2026.xlsx",
+      "size": 15805,
+      "checksum": "md5:9f9178deb3980b613948bfaf87623eff",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/FigureS2_Source_data_Yousefian_etal_2026.xlsx/content"
+      }
+    },
+    {
+      "id": "a6867792-bde5-4c26-9b04-573f66ec4120",
+      "key": "FigureS11_Source_data_Yousefian_etal_2026.xlsx",
+      "size": 10299,
+      "checksum": "md5:80ef0f96bd477bf295148060db5f1528",
+      "links": {
+        "self": "https://zenodo.org/api/records/14711865/files/FigureS11_Source_data_Yousefian_etal_2026.xlsx/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "1176174"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 422,
+    "unique_downloads": 379,
+    "views": 143,
+    "unique_views": 129,
+    "version_downloads": 422,
+    "version_unique_downloads": 379,
+    "version_unique_views": 129,
+    "version_views": 143
+  },
+  "state": "done",
+  "submitted": true
+}

@@ -1,0 +1,146 @@
+{
+  "checked_date": "2026-10-18",
+  "status": "engineering checks passed; author-workspace GatingML portability unsupported",
+  "existing_data_checks": {
+    "flowkit_version": "1.3.2",
+    "scope": "offline development data; no new downloads",
+    "fcs_checksum_and_parse_passed": 159,
+    "events_reparsed": 1234498,
+    "by_dataset": {
+      "her2-car-t": 71,
+      "t-cell-gfp-knockin": 67,
+      "treg-characterization": 8,
+      "car-nk-knockin": 13
+    },
+    "not_downloaded_fcs": 6,
+    "workspaces_replayed": 3,
+    "workspace_sample_cases": 7,
+    "gate_cases": 28,
+    "direct_permutation_subset_and_parent_checks": "passed",
+    "gatingml_roundtrip_passed": 0,
+    "gatingml_roundtrip_blocked": 7,
+    "samples_affected_by_compensation_omission": 3,
+    "missing_exact_workspace_sample_references": 1,
+    "missing_workspaces": [
+      "tSNE.wsp"
+    ],
+    "limitations": [
+      "Replay and invariance use the same FlowKit engine, not independent FlowJo agreement.",
+      "Authors supplied fixed gates; automatic gate fitting and biological accuracy are not tested.",
+      "FCS metadata and workspace filename matching do not establish donor independence.",
+      "Unavailable files and unmatched references are excluded, never substituted."
+    ]
+  },
+  "fresh_opencyto_checks": {
+    "r_image": "sha256:ac69b3db3eb689dbb6e9914f6aeb78841b90056a4722aee731f16387cd3dfcea",
+    "dataset": "her2-car-t",
+    "cataloged_fcs": 76,
+    "available_tested_fcs": 71,
+    "not_downloaded_fcs": 5,
+    "outcomes": {
+      "passed": 71
+    },
+    "events_compared": 397897,
+    "membership_mismatches": 0,
+    "claim": "Independent per-file openCyto FSC-A mindensity fitting and exact FlowKit transfer, including validated GatingML roundtrip. Engineering only; no biological identity or accuracy claim."
+  },
+  "fsc_gate_retained_percent_range": [
+    0.21306818181818182,
+    76.71890798786653
+  ],
+  "python_tests": {
+    "passed": 22,
+    "command": ".venv/bin/python -m pytest -q"
+  },
+  "data_collection": "No new downloads. Testing uses existing development data.",
+  "biological_accuracy": "Not tested; no expert reference gates or untouched donor evaluation cohort.",
+  "gatingml_export_safeguard": "Schema validation and, when a sample is supplied, exact membership replay precede writing exports. Unsupported FlowJo exports are retained only as INVALID local diagnostic files.",
+  "local_evidence_sha256": {
+    "reports/local/testing/validation.json": "357eb2d1fee058e443d83d8e906cbdeec7e6490f90f11cafc524ab8920c663f0",
+    "reports/local/testing/opencyto/validation.json": "50b4b3896b46825066d6da717320e8c67bf26820765a86f57215a9b4737319a2"
+  },
+  "manifest_sha256": "f49af86f0a43c9cf1aed80f567d8ffedc9375cf1cb16ff63bac853a3dd6e49cf",
+  "review_figures": [
+    "reports/local/testing/author-gate-retention.png",
+    "reports/local/testing/opencyto-fit-review.png"
+  ],
+  "scatterplot_report": {
+    "page": "docs/TESTING.md",
+    "manifest": "docs/assets/testing/plot-manifest.json",
+    "files_plotted": 159,
+    "events": 1234498,
+    "author_gate_panels": 28,
+    "verified_fsc_thresholds": 71,
+    "raw_only_files": 81,
+    "display_subsampling": false,
+    "figures_available_on_github": true,
+    "standalone_page": "docs/TESTING.html",
+    "searchable_gallery": "docs/assets/testing/index.html"
+  },
+  "user_guided_reviews": [
+    {
+      "id": "nk-her2-v1",
+      "sample": "NK Cells_Her2_CAR.fcs",
+      "results": "docs/assets/testing/reviews/nk-her2-v1/results.json",
+      "scope": "This pictured sample only; no automatic transfer to other files.",
+      "coordinate_status": "Approximate manual digitization of the user-drawn orange line and eight blue vertex centers. Not machine-extracted exact gate coordinates.",
+      "checks": {
+        "analytic_first_gate": "passed",
+        "independent_singlet_polygon": "passed",
+        "unchanged_live_car_geometry": "passed",
+        "compensation_and_transforms_unchanged": "passed",
+        "event_permutation": "passed",
+        "event_subset": "passed",
+        "nested_membership_and_denominators": "passed",
+        "figure_geometry": "passed"
+      },
+      "gates": [
+        {
+          "gate": "No Debris",
+          "original_count": 22769,
+          "original_parent_count": 30000,
+          "original_percent_of_parent": 75.89666666666666,
+          "revised_count": 15700,
+          "revised_parent_count": 30000,
+          "revised_percent_of_parent": 52.333333333333336,
+          "excluded_vs_original": 7069,
+          "included_vs_original": 0
+        },
+        {
+          "gate": "Singlets",
+          "original_count": 21589,
+          "original_parent_count": 22769,
+          "original_percent_of_parent": 94.81751504238218,
+          "revised_count": 14849,
+          "revised_parent_count": 15700,
+          "revised_percent_of_parent": 94.57961783439491,
+          "excluded_vs_original": 7053,
+          "included_vs_original": 313
+        },
+        {
+          "gate": "Live",
+          "original_count": 14628,
+          "original_parent_count": 21589,
+          "original_percent_of_parent": 67.75672796331465,
+          "revised_count": 14655,
+          "revised_parent_count": 14849,
+          "revised_percent_of_parent": 98.69351471479561,
+          "excluded_vs_original": 253,
+          "included_vs_original": 280
+        },
+        {
+          "gate": "CAR",
+          "original_count": 5385,
+          "original_parent_count": 14628,
+          "original_percent_of_parent": 36.8129614438064,
+          "revised_count": 5431,
+          "revised_parent_count": 14655,
+          "revised_percent_of_parent": 37.0590242238144,
+          "excluded_vs_original": 81,
+          "included_vs_original": 127
+        }
+      ],
+      "configuration_sha256": "295b22c2a9cec50ddd86046566282aa5182a78b6cf799b4f8743ae1ff314609d"
+    }
+  ]
+}

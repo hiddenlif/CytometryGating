@@ -1,0 +1,160 @@
+dataset,filename,role,events,mode,selected,parent_count,percent_of_parent,image,source_checksum_algorithm,source_checksum
+her2-car-t,0.625ng_B7.fcs,unresolved_acquisition,17250,openCyto FSC engineering gate,1861,17250,10.788405797101449,801f01ec048c8360.png,md5,51967ffa126c5a192c80b18b59d4bd1d
+her2-car-t,0.625ng_C7.fcs,unresolved_acquisition,21936,openCyto FSC engineering gate,4306,21936,19.62983223924143,afc09cd791a4de33.png,md5,d3e3f73b40f0559e95c738c1f9b9b43b
+her2-car-t,0.625ng_D7.fcs,unresolved_acquisition,17399,openCyto FSC engineering gate,3015,17399,17.32858210241968,89fbcd7c2f0e2b34.png,md5,941456d6919066ee567e8fdf805ee40b
+her2-car-t,0.625ng_E7.fcs,unresolved_acquisition,15987,openCyto FSC engineering gate,2645,15987,16.5446925627072,5fdb23bcb94f7b32.png,md5,63084da47a26b9e005fa901d5b7fd76b
+her2-car-t,0.625ng_F7 failure.fcs,unresolved_acquisition,38093,openCyto FSC engineering gate,20175,38093,52.962486546084584,ecd13de4221d9350.png,md5,5b9f9215e2032ca7f373f40b4fa5ce80
+her2-car-t,0.625ng_G7.fcs,unresolved_acquisition,11436,openCyto FSC engineering gate,1520,11436,13.29136061559986,21079b4d38d6443e.png,md5,bd9c6ca1b6401270facd847b037c4aaa
+her2-car-t,0.3125ng_B8.fcs,unresolved_acquisition,6442,openCyto FSC engineering gate,598,6442,9.282831418814032,06d2dd8b350ed5b3.png,md5,e2bc36cdedf213a7cffd43b4a559f8bb
+her2-car-t,0.3125ng_C8.fcs,unresolved_acquisition,7794,openCyto FSC engineering gate,750,7794,9.62278675904542,7cd8a4f8c41b8a28.png,md5,c55939c6da5f2cb1217910cedea14b2a
+her2-car-t,0.3125ng_F8.fcs,unresolved_acquisition,9824,openCyto FSC engineering gate,1011,9824,10.291123778501628,5803f7381d92168c.png,md5,3941bbae7832a600abb5676cf949b478
+her2-car-t,0.3125ng_G8.fcs,unresolved_acquisition,24552,openCyto FSC engineering gate,4247,24552,17.2979797979798,95466bb34b177740.png,md5,b661da504d03686d247d457b6a0180bb
+her2-car-t,0ng_B3.fcs,unresolved_acquisition,6763,openCyto FSC engineering gate,3799,6763,56.17329587461186,38b15f605cbef379.png,md5,43f110dceb4b988165f6ee718677b262
+her2-car-t,0ng_C3.fcs,unresolved_acquisition,5621,openCyto FSC engineering gate,3489,5621,62.07080590642234,a0a9ec16f9977363.png,md5,3e5c516f3654fec5a685b05c0f31713b
+her2-car-t,0ng_D3.fcs,unresolved_acquisition,6671,openCyto FSC engineering gate,3307,6671,49.572777694498576,e84f22c8d6484300.png,md5,e07fcf4e37f47595a4638f0613401e8c
+her2-car-t,0ng_F3.fcs,unresolved_acquisition,15824,openCyto FSC engineering gate,12140,15824,76.71890798786653,d2daef157e86c9b8.png,md5,9cb8c05ba89443b7a6f19347dcc86d06
+her2-car-t,0ng_G3.fcs,unresolved_acquisition,5390,openCyto FSC engineering gate,3150,5390,58.44155844155844,ae276c2aa48b81e8.png,md5,52a0b502199b4bb6b746f02a7e20d89a
+her2-car-t,5ng_B4.fcs,unresolved_acquisition,9845,openCyto FSC engineering gate,1178,9845,11.96546470289487,f3e6965fea794fcc.png,md5,8dba5adf3bdfdb6d2d4071e96eb08139
+her2-car-t,5ng_C4.fcs,unresolved_acquisition,12709,openCyto FSC engineering gate,2593,12709,20.402864112046583,3c18cd2f502e6129.png,md5,1711ac49a5edbeb0dd2d1a80c4cb519e
+her2-car-t,5ng_D4.fcs,unresolved_acquisition,8518,openCyto FSC engineering gate,1105,8518,12.972528762620334,064c7ba247f1ea60.png,md5,6f4211915cae6be6f452120e365adeb2
+her2-car-t,5ng_E4.fcs,unresolved_acquisition,10224,openCyto FSC engineering gate,1513,10224,14.79851330203443,e4f105bcae71d580.png,md5,b1866ccd39835a7fa6aed09084ea8f98
+her2-car-t,5ng_F4.fcs,unresolved_acquisition,13529,openCyto FSC engineering gate,1764,13529,13.038657698277774,dec141228dc03ced.png,md5,fc926db36320f4cf3fe326cdb72ddbd9
+her2-car-t,10ng_C3.fcs,unresolved_acquisition,10877,openCyto FSC engineering gate,1142,10877,10.499218534522386,dd527d6097d22c6f.png,md5,eb539830a408ac0c8adf7dda098a417c
+her2-car-t,10ng_D3.fcs,unresolved_acquisition,7276,openCyto FSC engineering gate,675,7276,9.277075316107751,8dec756df1ff9157.png,md5,e18e0aa6d83e43827efbb6af155c490f
+her2-car-t,10ng_E3.fcs,unresolved_acquisition,9949,openCyto FSC engineering gate,1392,9949,13.991355915167354,7aee60998c2e5d1b.png,md5,40b8ffe960533b810f1ce3a0581d9954
+her2-car-t,10ng_F3.fcs,unresolved_acquisition,15340,openCyto FSC engineering gate,2474,15340,16.127770534550194,c5225b97b857ee2d.png,md5,7b019251a046bf102193f27c602b88b1
+her2-car-t,10ng_G3.fcs,unresolved_acquisition,18317,openCyto FSC engineering gate,2225,18317,12.147185674510018,604d88ffc86073f5.png,md5,3e7aac657a3ae90258eba2e0bfa1c5bd
+her2-car-t,F_B8.fcs,unresolved_acquisition,1004,openCyto FSC engineering gate,6,1004,0.5976095617529881,ad7690909cf6bf49.png,md5,a98d6ebdf56b00a51f3fdf2f042f8d6c
+her2-car-t,F_C8.fcs,unresolved_acquisition,964,openCyto FSC engineering gate,4,964,0.4149377593360996,59a33e93ba846e59.png,md5,48e1ffec05c1d08154a2dda8688fd9c8
+her2-car-t,F_E8.fcs,unresolved_acquisition,1017,openCyto FSC engineering gate,4,1017,0.39331366764995085,d2ce90371cf12ff8.png,md5,144dee2f9745c3b617ae3a163ac746f2
+her2-car-t,F_F8.fcs,unresolved_acquisition,936,openCyto FSC engineering gate,6,936,0.6410256410256411,639c6625e05e656f.png,md5,d70c0fd066e36b32b16380f32944acc3
+her2-car-t,F_G8.fcs,unresolved_acquisition,1067,openCyto FSC engineering gate,3,1067,0.28116213683223995,e58bc1334d4504b9.png,md5,15f912664609fc2880bb0cc2bb9f6916
+her2-car-t,G_B9.fcs,unresolved_acquisition,941,openCyto FSC engineering gate,6,941,0.6376195536663124,3737c971e7591299.png,md5,58864d71bbbfad1fbd3699ee8a915f6c
+her2-car-t,G_C9.fcs,unresolved_acquisition,1150,openCyto FSC engineering gate,7,1150,0.6086956521739131,928362c98f235c32.png,md5,5e352c4dcd7fa09f5aad92417d0b3532
+her2-car-t,G_D9.fcs,unresolved_acquisition,1006,openCyto FSC engineering gate,11,1006,1.0934393638170974,b56468f25b74bd62.png,md5,157ff310aa3909ced65ef33d11fad9d7
+her2-car-t,G_E9.fcs,unresolved_acquisition,1264,openCyto FSC engineering gate,341,1264,26.977848101265824,b164059328bf7394.png,md5,63d53f46f1cc1eac46f3bc12e95ea78d
+her2-car-t,G_F9 ok.fcs,unresolved_acquisition,1475,openCyto FSC engineering gate,27,1475,1.8305084745762712,acd1e137854515b0.png,md5,28f61c199f548fd2f48025914d131d42
+her2-car-t,G_G9 ok.fcs,unresolved_acquisition,1548,openCyto FSC engineering gate,18,1548,1.1627906976744187,356dd533ba6e976d.png,md5,2ba61704512344d0e746b7f8eebe56f3
+her2-car-t,H_B10.fcs,unresolved_acquisition,1287,openCyto FSC engineering gate,15,1287,1.1655011655011656,5901c8aa248b097a.png,md5,9a0fd749ad885db76c2f39160bf86a8c
+her2-car-t,H_C10.fcs,unresolved_acquisition,1101,openCyto FSC engineering gate,7,1101,0.6357856494096276,88ffb3d0d9c32f97.png,md5,f9e3a7608291f163d46cb72b5832af69
+her2-car-t,H_D10 ok.fcs,unresolved_acquisition,1461,openCyto FSC engineering gate,6,1461,0.4106776180698152,bf02f44c15cb2e2e.png,md5,d82b182091ebaa1d9214a89dfebf993a
+her2-car-t,H_E10.fcs,unresolved_acquisition,1411,openCyto FSC engineering gate,13,1411,0.9213323883770376,bcccc6ae354b13b9.png,md5,a32a3be9adfbef68d7dc7c46de2691d6
+her2-car-t,H_F10.fcs,unresolved_acquisition,1492,openCyto FSC engineering gate,28,1492,1.876675603217158,d8cfed1ccb1ddf21.png,md5,df20a19ca454a7ad2363c6dc370f4b8e
+her2-car-t,A_B3.fcs,unresolved_acquisition,3427,openCyto FSC engineering gate,1290,3427,37.64225269915378,13f5798e71ad3e25.png,md5,94eae724b689e00b968f0bdf8531825f
+her2-car-t,A_C3.fcs,unresolved_acquisition,1943,openCyto FSC engineering gate,13,1943,0.6690684508492023,7bf72b87c4bb41d8.png,md5,9537870d7fe0c4da38155caecda363cd
+her2-car-t,A_D3.fcs,unresolved_acquisition,1466,openCyto FSC engineering gate,4,1466,0.2728512960436562,d19df734d749819b.png,md5,857d7ed3f124f73c25a3057250cf5948
+her2-car-t,A_E3.fcs,unresolved_acquisition,2181,openCyto FSC engineering gate,7,2181,0.32095369096744614,6f5a596e3d92aac0.png,md5,1acd2fa8163e55907f7d21c2c6c8fd25
+her2-car-t,A_F3.fcs,unresolved_acquisition,2816,openCyto FSC engineering gate,6,2816,0.21306818181818182,d54863df0933ecbe.png,md5,7c0bcb1a6614a20cafcadb1d04286e32
+her2-car-t,A_G3.fcs,unresolved_acquisition,2633,openCyto FSC engineering gate,13,2633,0.49373338397265476,1c07e338c82344bb.png,md5,510e3bfc0d544eaefab09ff2b3654ef3
+her2-car-t,B_B4.fcs,unresolved_acquisition,1555,openCyto FSC engineering gate,572,1555,36.78456591639871,2625a81556c9f2fc.png,md5,629fbf5bd28b80ad4b6f80d9b31c3154
+her2-car-t,B_C4.fcs,unresolved_acquisition,1289,openCyto FSC engineering gate,10,1289,0.7757951900698216,60c89794c1f160c6.png,md5,fa78cb0ac3a8df56620bf28c1accf814
+her2-car-t,B_D4 good.fcs,unresolved_acquisition,2356,openCyto FSC engineering gate,14,2356,0.5942275042444821,d6e8e5a71f029f4b.png,md5,5453a90b2e94274eea4adafe1e42a36d
+her2-car-t,B_E4.fcs,unresolved_acquisition,1194,openCyto FSC engineering gate,11,1194,0.9212730318257957,aae941f53929958e.png,md5,85957fa090af7f105827297c2f6cf5f7
+her2-car-t,B_F4.fcs,unresolved_acquisition,1683,openCyto FSC engineering gate,516,1683,30.659536541889484,2c3aa3b8f48ab5e0.png,md5,7543c4b81de153fe7a3fe0027a10b128
+her2-car-t,B_G4.fcs,unresolved_acquisition,1541,openCyto FSC engineering gate,28,1541,1.8170019467878,9db4a7bd2176af05.png,md5,1d6dcc692f03292da8e4eaa2bb7f74ca
+her2-car-t,C_B5 ok.fcs,unresolved_acquisition,1937,openCyto FSC engineering gate,15,1937,0.7743933918430562,0f19f62ae2569862.png,md5,7abe8d4d9b707f2230f7fc3d80082f16
+her2-car-t,C_C5.fcs,unresolved_acquisition,1524,openCyto FSC engineering gate,12,1524,0.7874015748031497,ccdbf81e2a7be6ac.png,md5,e0c7c055d7ea9ee013aaaa6814f2126c
+her2-car-t,C_D5.fcs,unresolved_acquisition,1124,openCyto FSC engineering gate,11,1124,0.9786476868327402,322a8201e2e7344a.png,md5,a426079e94762c569d405488ef71b535
+her2-car-t,C_E5.fcs,unresolved_acquisition,1545,openCyto FSC engineering gate,21,1545,1.3592233009708738,e27c581831cd584d.png,md5,c0e421e8a13a5971f67cfdab1ee13be5
+her2-car-t,C_F5.fcs,unresolved_acquisition,2055,openCyto FSC engineering gate,10,2055,0.48661800486618007,fffb85ce8cbccb37.png,md5,877fe2cb13ec68d4ba18637cb310e1be
+her2-car-t,C_G5 ok.fcs,unresolved_acquisition,2222,openCyto FSC engineering gate,744,2222,33.48334833483349,24503da033e1539e.png,md5,2b2edf15d03c35a8243ead145f893933
+her2-car-t,D_B6.fcs,unresolved_acquisition,1699,openCyto FSC engineering gate,603,1699,35.491465567981166,fa4674c48f2bebed.png,md5,47e2f74959b645906ce2d7900200bbb9
+her2-car-t,D_C6.fcs,unresolved_acquisition,1431,openCyto FSC engineering gate,17,1431,1.187980433263452,8479c9b69986a132.png,md5,20b9536279fe63105b52e9d333aec1e6
+her2-car-t,D_D6.fcs,unresolved_acquisition,1127,openCyto FSC engineering gate,14,1127,1.2422360248447204,c781c5f235b4c5d0.png,md5,10541bd42d22cbb681b392d7d85f6413
+her2-car-t,D_E6 ok.fcs,unresolved_acquisition,1435,openCyto FSC engineering gate,7,1435,0.4878048780487805,f61e3ab7c22ec8e6.png,md5,c2247aaca9347ce74197f29e8c335c68
+her2-car-t,D_F6.fcs,unresolved_acquisition,1466,openCyto FSC engineering gate,6,1466,0.4092769440654843,26dcaa9c98222896.png,md5,b26b8976350b40c6915c0d3f29bbe961
+her2-car-t,D_G6.fcs,unresolved_acquisition,1156,openCyto FSC engineering gate,8,1156,0.6920415224913494,c87e98fa57c0114a.png,md5,d69b062d7b84d0fbe7dfa90b978161a4
+her2-car-t,E control_B7.fcs,unresolved_acquisition,1234,openCyto FSC engineering gate,8,1234,0.6482982171799028,5cecdfa6774d90c6.png,md5,ea7caf1f363adccf49d7dc6257714760
+her2-car-t,E control_C7.fcs,unresolved_acquisition,1294,openCyto FSC engineering gate,11,1294,0.8500772797527048,cb5a96aebc9a5d4e.png,md5,581f3deae7013027d36b6ed2516e6b83
+her2-car-t,E control_D7.fcs,unresolved_acquisition,975,openCyto FSC engineering gate,5,975,0.5128205128205128,68dd44c79a6ae70b.png,md5,215704e6f0023358212892448dd8922e
+her2-car-t,E control_E7.fcs,unresolved_acquisition,1573,openCyto FSC engineering gate,7,1573,0.44500953591862685,8e0a2f9aceb9c350.png,md5,3699b06e178391fb40f94c66f2e80521
+her2-car-t,E control_F7.fcs,unresolved_acquisition,1649,openCyto FSC engineering gate,4,1649,0.2425712553062462,668603f84a701535.png,md5,bb5438d78e80d5f8722d88b3dfd57f7f
+her2-car-t,E control_G7.fcs,unresolved_acquisition,1677,openCyto FSC engineering gate,557,1677,33.21407274895647,aa4426ffc9d65562.png,md5,6e1156bd96ba9f6029df93fcb880862f
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_Extra Cells_G2.fcs,unresolved_acquisition,523,Raw scatter only,,,,fc6d3d2ab9573992.png,md5,2c1ab0e0f9e12a553b600ab76b2de9ab
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_Extra Cells_B2.fcs,unresolved_acquisition,543,Raw scatter only,,,,629d10e329b30bde.png,md5,0a5367474118c34adad2e2c890afba6e
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_Extra Cells_C2.fcs,unresolved_acquisition,274,Raw scatter only,,,,aad23b0f598d9be5.png,md5,86de6bbc2443a0c4077b9072d396db24
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_Extra Cells_D2.fcs,unresolved_acquisition,296,Raw scatter only,,,,8a2950af45bda3e7.png,md5,92a87f0bb58fc6c5994d7b48b61968d2
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_Extra Cells_E2.fcs,unresolved_acquisition,396,Raw scatter only,,,,1251b883062f9ce1.png,md5,2b62fd7029b805ad851721b9d4cd27ca
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_Extra Cells_F2.fcs,unresolved_acquisition,341,Raw scatter only,,,,3c3c4512fc315685.png,md5,f9901ddab6ae0f99cf9468e0b167416c
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_C Failed Family_B5.fcs,unresolved_acquisition,601,Raw scatter only,,,,dff2105c13fa5849.png,md5,0de2ead8fa31b9a72612cd940c05eca5
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_C Failed Family_C5.fcs,unresolved_acquisition,452,Raw scatter only,,,,82c69912ea454f4a.png,md5,956ae74f2f03cf040fd849b12ac6c207
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_C Failed Family_D5.fcs,unresolved_acquisition,3199,Raw scatter only,,,,ad8dc63a78b1ed87.png,md5,ff11d23fd415c4026e481b284b905d62
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_C Failed Family_E5.fcs,unresolved_acquisition,106,Raw scatter only,,,,dc52cd09b85bec9b.png,md5,1c033bc3c893430b251935e4f1babf1a
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_C Failed Family_F5.fcs,unresolved_acquisition,2963,Raw scatter only,,,,cfd48f1c61e4e242.png,md5,2bcb7fcc87cd7acb2d27a6eb0f2b6540
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_C Failed Family_G5.fcs,unresolved_acquisition,579,Raw scatter only,,,,bbbb9b0d12f59ea6.png,md5,ed9079fffe44e545f8c63cda449bd834
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_Cell Test_Sample.fcs,unresolved_acquisition,1549,Raw scatter only,,,,26eb0bf4486922f7.png,md5,8975e86e9fafe3e086f1e4a1ae87d433
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_A Extra Family_B3.fcs,unresolved_acquisition,2014,Raw scatter only,,,,92a8710db4e49656.png,md5,9d2e3be0d69fae80cc5d3f1320199974
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_A Extra Family_C3.fcs,unresolved_acquisition,2365,Raw scatter only,,,,14d4a548e75991fa.png,md5,cf0c3ea6752547114671710a9f1121eb
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_A Extra Family_D3.fcs,unresolved_acquisition,1466,Raw scatter only,,,,4fafa96056f79134.png,md5,e8d4f1f1ff71ee10a06e66e0d7ab4a99
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_A Extra Family_E3.fcs,unresolved_acquisition,1599,Raw scatter only,,,,ea348a76bf33f951.png,md5,0bbef8e8aef30d705292d386c57e4492
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_A Extra Family_F3.fcs,unresolved_acquisition,1850,Raw scatter only,,,,ad6945c877f204ed.png,md5,144021776a6d81e4d86d83d98a3b6a30
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_A Extra Family_G3.fcs,unresolved_acquisition,1237,Raw scatter only,,,,8d7054d12c48222c.png,md5,01fd1b28186746c909055afda98d5ec0
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_OCC -_B12.fcs,unresolved_acquisition,5167,Raw scatter only,,,,2f3fdb0723450214.png,md5,e659d722ad72666723cd43d76295bd13
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_OCC -_C12.fcs,unresolved_acquisition,2615,Raw scatter only,,,,88050b02381afe77.png,md5,44f3815897971ebfcd7a46ce52ad2a6a
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_OCC -_D12.fcs,unresolved_acquisition,3599,Raw scatter only,,,,46c0ba91367eb2b4.png,md5,cef7f3c1947a5aec1455131cb1a962cc
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_OCC -_E12.fcs,unresolved_acquisition,3513,Raw scatter only,,,,fb520bb8fec593f5.png,md5,80ea549e0e2b8a44e215f78e431b7638
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_OCC -_F12.fcs,unresolved_acquisition,3541,Raw scatter only,,,,8639eef946247df9.png,md5,c866e088606cb7d4017a564ca2267435
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_OCC -_G12.fcs,unresolved_acquisition,4110,Raw scatter only,,,,c6b5ef4a0aa760b1.png,md5,5a6e52750058845a154944f169e4c364
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_OCC +_G11.fcs,unresolved_acquisition,13656,Raw scatter only,,,,7fe3b0cf00d0239f.png,md5,840a1ede62c5104f006e2974310051f1
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_OCC +_B11.fcs,unresolved_acquisition,2299,Raw scatter only,,,,3a975b8f35bbe4c2.png,md5,9555527bbdfe8dd7ea507309c51a2da7
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_OCC +_C11.fcs,unresolved_acquisition,2131,Raw scatter only,,,,4e6170bc0e375d08.png,md5,c2bc48dd0f43d0d347e9cc91ac92b7b0
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_OCC +_D11.fcs,unresolved_acquisition,2101,Raw scatter only,,,,cb9188523f40937a.png,md5,973a6970b41aa792b1f24752bf798211
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_OCC +_E11.fcs,unresolved_acquisition,2276,Raw scatter only,,,,b7fa5f697f3c0f8f.png,md5,8fa84aebddcb9bb9f0f604e9d80052b2
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_OCC +_F11.fcs,unresolved_acquisition,5943,Raw scatter only,,,,c96658023c752ee6.png,md5,164eee9979dfaea7e73495026e0f0d44
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.6ug 500V 4ms 2pulse_B4.fcs,unresolved_acquisition,7073,Raw scatter only,,,,11faa7314b8c17ca.png,md5,82b6dc7fb2b0fe3bdd7817d12716e8f8
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.6ug 500V 4ms 2pulse_C4.fcs,unresolved_acquisition,5212,Raw scatter only,,,,c672fa8e97f8bad6.png,md5,5e612291d8e7f9a1ac75ffc4a33fe0ee
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.6ug 500V 4ms 2pulse_D4.fcs,unresolved_acquisition,4934,Raw scatter only,,,,3ab2637171037a8c.png,md5,36b378b48637d6681c648f1b3f8290ad
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.6ug 500V 4ms 2pulse_E4.fcs,unresolved_acquisition,4347,Raw scatter only,,,,56bf1e73add538e0.png,md5,9dfecef8e83b00db3eb0a8824f22978d
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.6ug 500V 4ms 2pulse_F4.fcs,unresolved_acquisition,7835,Raw scatter only,,,,a1764278739fb0aa.png,md5,f73b5c8911a8dc1e31df0d0c11a96a49
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.6ug 500V 4ms 2pulse_G4.fcs,unresolved_acquisition,6342,Raw scatter only,,,,5339ccb2f6fdb640.png,md5,e45d3c91c63154662e493971f75196e2
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_0ug_B7.fcs,unresolved_acquisition,2891,Raw scatter only,,,,594e94fac97f007a.png,md5,2f9d829822c16a3b0028204c231a368c
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_0ug_C7.fcs,unresolved_acquisition,2717,Raw scatter only,,,,adacb8a149a5684f.png,md5,a58a13edd5286fd44da09b2bcf395cb9
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_0ug_D7.fcs,unresolved_acquisition,2287,Raw scatter only,,,,d0ab5bd0839a2e7b.png,md5,907dd57cee6a15e19f1b5ff57c766fec
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_0ug_E7.fcs,unresolved_acquisition,2622,Raw scatter only,,,,7fe0404f80cec372.png,md5,633a96e341a9aebbe11ebf8ea3995f80
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_0ug_F7.fcs,unresolved_acquisition,3386,Raw scatter only,,,,ee0b01f6693719f1.png,md5,0501d75a839ed56dfaee4047fdcd3f39
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_0ug_G7.fcs,unresolved_acquisition,5953,Raw scatter only,,,,00db94b7b99ecf13.png,md5,6f13445b73c14d943fed13e51ef49293
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.6 500V 2ms 2pulse_B6.fcs,unresolved_acquisition,3829,Raw scatter only,,,,8a6ba0de7a8d65f9.png,md5,dbf1c8cad2e61061e598a9e1e62409c8
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.6 500V 2ms 2pulse_C6.fcs,unresolved_acquisition,3165,Raw scatter only,,,,8600376595bcf01e.png,md5,4de205b943c8dc64265760238f4920f1
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.6 500V 2ms 2pulse_D6.fcs,unresolved_acquisition,2821,Raw scatter only,,,,d9272e598181f62d.png,md5,7810326d75078808ae0fd67834e45fc6
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.6 500V 2ms 2pulse_E6.fcs,unresolved_acquisition,2503,Raw scatter only,,,,215499083bb91595.png,md5,72560d31d0a07a4428791f6a7d602abf
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.6 500V 2ms 2pulse_F6.fcs,unresolved_acquisition,3497,Raw scatter only,,,,631ddf84db52245d.png,md5,e6aab2c8324ac93561d248fab6c34cf2
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.6 500V 2ms 2pulse_G6.fcs,unresolved_acquisition,2785,Raw scatter only,,,,d66527a09f3f76c9.png,md5,c31d59d436c87e5ded0383c85f35eee2
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 4ms 2pulse_D9.fcs,unresolved_acquisition,2209,Raw scatter only,,,,1afdcc9f0f68bb47.png,md5,06154a3c777bb97c2841efb8f1e31949
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 4ms 2pulse_E9.fcs,unresolved_acquisition,2297,Raw scatter only,,,,94fb1468fe67c259.png,md5,ee347321a59bbb32b84fc6225481493d
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 4ms 2pulse_F9.fcs,unresolved_acquisition,3065,Raw scatter only,,,,a6493ca02848a265.png,md5,3ef8d34ca4e4c0691d618fb7b93e1102
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 4ms 2pulse_G9.fcs,unresolved_acquisition,3271,Raw scatter only,,,,04d53d43f9280a72.png,md5,2794514bdf34805bb753b6c594e6ed9d
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 4ms pulse_B8.fcs,unresolved_acquisition,3289,Raw scatter only,,,,ecb92ad16fc004d4.png,md5,4beb10e994f40422c5a54cca9b9a7fe5
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 4ms pulse_C8.fcs,unresolved_acquisition,3245,Raw scatter only,,,,c51aaddd4975bae4.png,md5,afd0c9ff31f8374c8ba46fffade1c6ac
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 4ms pulse_D8.fcs,unresolved_acquisition,2875,Raw scatter only,,,,5bb8b6c2505ae1e2.png,md5,41ac9807faa12d6282983a68cf052f76
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 4ms pulse_E8.fcs,unresolved_acquisition,3166,Raw scatter only,,,,cc8495121c0b16c5.png,md5,ef70696b957b3eadbedc4aa25d3a5c1d
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 4ms pulse_F8.fcs,unresolved_acquisition,3212,Raw scatter only,,,,2b914e565f887460.png,md5,5d6bf578078d7d737f4e83fb4033df66
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 4ms pulse_G8.fcs,unresolved_acquisition,5041,Raw scatter only,,,,0409fc71c3479d6e.png,md5,c582547545ede3f796a2f3de89b8578e
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 2ms 2pulse_B10.fcs,unresolved_acquisition,779,Raw scatter only,,,,bd8001833e4321a7.png,md5,74fb7db41093ecb438e28fa29b6c0a4d
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 2ms 2pulse_C10.fcs,unresolved_acquisition,622,Raw scatter only,,,,bb0a62cae4c0ef6d.png,md5,19fbf511fe63ba3032595c97f80a8d6f
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 2ms 2pulse_D10.fcs,unresolved_acquisition,668,Raw scatter only,,,,a7a83486d8fe2327.png,md5,55753c40367065d6c5ed75957c780027
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 2ms 2pulse_E10.fcs,unresolved_acquisition,615,Raw scatter only,,,,2e4c5f1846571bf7.png,md5,01c291693dae733bbe9aa07e7ac4c162
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 2ms 2pulse_F10.fcs,unresolved_acquisition,639,Raw scatter only,,,,c79f7f3e60e09984.png,md5,fced37d9cc6e9aae1df6139fe967899b
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 2ms 2pulse_G10.fcs,unresolved_acquisition,802,Raw scatter only,,,,bd4754a5b4478346.png,md5,8686c5fafa37f039519c8bca97263214
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 4ms 2pulse_B9.fcs,unresolved_acquisition,2063,Raw scatter only,,,,f9be997d6bebbf12.png,md5,fb609a41b849ef24393246b6dfef6dca
+t-cell-gfp-knockin,MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 4ms 2pulse_C9.fcs,unresolved_acquisition,2792,Raw scatter only,,,,c0fbc57091666bf9.png,md5,2121f9038e046b7f436d5bc3dd0c2dfd
+treg-characterization,Characterization_Regulatory-T-cells_cells_CD4-CD25-TCR-FOXP3.fcs,unresolved_acquisition,10096,Raw scatter only,,,,f54a1facad710149.png,md5,fb66e739eedf4b1615c5c7bd30e2654d
+treg-characterization,Characterization_Regulatory-T-cells_cells_unstained.fcs,unstained_control,163262,Raw scatter only,,,,6764021a44eaf149.png,md5,d4bd778b33a8ebf828277fa73a652be4
+treg-characterization,Characterization_Regulatory-T-cells_Compensation_BL1-A.fcs,compensation_control,7531,Raw scatter only,,,,8591e75bbe81fc62.png,md5,933211a17f4a55e2469cf2d40fa7a916
+treg-characterization,Characterization_Regulatory-T-cells_Compensation_RL1-A.fcs,compensation_control,4833,Raw scatter only,,,,19b11ad1f776bca7.png,md5,82ba6077aca72eef9851cff1e50192ca
+treg-characterization,Characterization_Regulatory-T-cells_Compensation_UC.fcs,compensation_control,8714,Raw scatter only,,,,fb0c475c12685143.png,md5,005971e2a839fb6635e7c6098f9c7281
+treg-characterization,Characterization_Regulatory-T-cells_Compensation_VL1-A.fcs,compensation_control,2666,Raw scatter only,,,,11045b886f6bed57.png,md5,4a7a22a8671acb6e8e02c1dd66518489
+treg-characterization,Characterization_Regulatory-T-cells_Compensation_YL1-A.fcs,compensation_control,3318,Raw scatter only,,,,d532ae908e510d2c.png,md5,aca9b0a140357ad03756e6c4916f2869
+treg-characterization,Characterization_Regulatory-T-cells_Compensation_YL4-A.fcs,compensation_control,5352,Raw scatter only,,,,8689974b9ebd1bec.png,md5,21e1514808d6283edefee3c8e42ef493
+car-nk-knockin,NK Cells_Her2_CAR.fcs,unresolved_acquisition,30000,Author gate replay,5385,14628,36.8129614438064,bbb346f11e2432c8.png,sha256,969a978ff526e47cb8c8111833523e8e33bc1733485716bf9d2a37d6f1425724
+car-nk-knockin,NK Cells_RNP_Her2.fcs,unresolved_acquisition,30000,Author gate replay,78,22180,0.35166816952209196,2161b12b4a4d0f42.png,sha256,8bb6d826260e2b50a7e0361dfa2ba92f8c90aa0754fa6a727f263dd242db6d35
+car-nk-knockin,Her2_CAR.fcs,unresolved_acquisition,15260,Author gate replay,758,8185,9.260843005497861,4ee37b2028e7fa1d.png,sha256,abffd87f53e67ee077562643eaaabcf6f5995c77a542c02fd4de1204c715827a
+car-nk-knockin,RNP-NK.fcs,unresolved_acquisition,10710,Author gate replay,17,3470,0.4899135446685879,3a32dd9e27581e9d.png,sha256,f93070c88fd0019fa81f66e2fbb0f6633d0c76d41028c5dd4b8b065b8e4800d9
+car-nk-knockin,concat_1.fcs,concatenation,23127,Raw scatter only,,,,f2636c06f7149850.png,sha256,da4988f1d8862a65f416fec01a5acb5aa44801d81a8f2b85976c6effc5f83e9e
+car-nk-knockin,DN8_CAR-NK_Mix.fcs,unresolved_acquisition,150000,Raw scatter only,,,,d40c4cecc9941f95.png,sha256,9ce30686c4835ae93c51bab228e0eb48684a93564fa8480eab4d004a732bfabb
+car-nk-knockin,DN8_WT-NK_Mix.fcs,unresolved_acquisition,150000,Raw scatter only,,,,774242d71edac6ec.png,sha256,545e021155c07626ffd08ce20ebb7f85251c154cdb32341f99850d05d675c857
+car-nk-knockin,export_DN8_CAR-NK_Mix_Live_CAR-.fcs,exported_subset,7709,Raw scatter only,,,,2558e007a4af858c.png,sha256,6cbea80daba6b03c414a58700a75e08c50151dcc8bb56be4b81c272675a65ae4
+car-nk-knockin,export_DN8_CAR-NK_Mix_Live_CAR+.fcs,exported_subset,7709,Raw scatter only,,,,de409bf20713060d.png,sha256,f7aa33d47a49169d80990eb1aa81b198b2f3836c07b5f5c68dcd7c88c2c86074
+car-nk-knockin,export_DN8_WT-NK_Mix_ CD56+.fcs,exported_subset,7709,Raw scatter only,,,,43700b70b9d85993.png,sha256,8989e4d10d4b02da2c988201e5cec9b4c62b2bb5d0879cc5283a035e16d77854
+car-nk-knockin,aftersort_APC-.fcs,unresolved_acquisition,376,Author gate replay,1,310,0.3225806451612903,c288af0aaaae213e.png,sha256,ad18027d9a7f3741945bc953baa06003efc5c316ab18e740381b8a157acf2361
+car-nk-knockin,aftersort_APC+.fcs,unresolved_acquisition,76,Author gate replay,37,38,97.36842105263158,080ac4eac6e6036d.png,sha256,b2064019a0f81aee27468682afb40da7756df49ca04b9fdb59c77d23a83e9048
+car-nk-knockin,beforesort_car-NK.fcs,unresolved_acquisition,10000,Author gate replay,642,4709,13.633467827564239,7c90276577e822f6.png,sha256,d3be367a68b2b19ef31c7b31e4905bcf802c5525d223a89287d95a524f3fbd48

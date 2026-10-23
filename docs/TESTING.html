@@ -1,0 +1,1621 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Flow cytometry testing: scatterplots and results</title>
+<style>body{font:16px/1.6 system-ui;color:#182b3b;background:#f1f5f8;margin:0}main{max-width:1180px;margin:auto;padding:30px 36px;background:white}h1{font-size:32px;line-height:1.2;color:#12374b}h2{margin-top:44px;border-bottom:2px solid #dae6ed;padding-bottom:8px;color:#12374b}h3{margin-top:30px}a{color:#006d91}img{max-width:100%;height:auto;border:1px solid #dce4ea;border-radius:6px}table{border-collapse:collapse;font-size:14px;display:block;overflow-x:auto;width:100%;margin:20px 0}th,td{padding:10px 12px;border:1px solid #dce4ea;text-align:left}th{background:#e9f2f7}tbody tr:nth-child(even){background:#f7f9fb}details{border:1px solid #cedde6;border-radius:6px;padding:14px;margin:18px 0}summary{cursor:pointer;font-weight:650}pre{padding:18px;background:#eff4f7;overflow:auto}code{font-size:14px}li{margin:10px 0}.top{background:#12374b;color:white;padding:15px 24px;position:sticky;top:0;z-index:2}.top a{color:white;margin-right:20px}h2,h3{scroll-margin-top:75px}@media(max-width:700px){main{padding:20px 14px}.top{position:static}h1{font-size:26px}}</style>
+<nav class="top"><a href="#user-guided-revision-nk-her2-v1">Reviewed gates</a><a href="#author-gating-hierarchies">Author gates</a><a href="#her2-car-t-engineering-gates">HER2 scatterplots</a><a href="#complete-file-index">All files</a><a href="assets/testing/index.html">Search gallery</a></nav><main><h1 id="flow-cytometry-testing-scatterplots-and-results">Flow cytometry testing: scatterplots and results</h1>
+<p>Existing development data · checked October 18, 2026 · FlowKit 1.3.2 / openCyto 2.22.0</p>
+<p><strong>159 FCS files now have event scatterplots.</strong> All 1,234,498 events are represented without display subsampling. Pink boundaries show original tested gates; orange boundaries identify the user-guided revision. Counts and percentages are computed on complete event memberships.</p>
+<p><a href="#user-guided-revision-nk-her2-v1">User-guided revision</a> · <a href="#author-gating-hierarchies">Author gate plots</a> · <a href="#her2-car-t-engineering-gates">HER2 CAR-T plots</a> · <a href="#other-existing-data">Other datasets</a> · <a href="#complete-file-index">Complete file index</a> · <a href="#methods-and-limits">Methods and limits</a></p>
+<h2 id="test-coverage">Test coverage</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Result</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source integrity and parsing</td>
+<td>159 / 159 available files; 1,234,498 finite events</td>
+<td>Six cataloged FCS files remain unavailable</td>
+</tr>
+<tr>
+<td>Fresh openCyto fitting</td>
+<td>71 / 71 available HER2 files</td>
+<td>Raw FSC-A engineering threshold; no biological identity</td>
+</tr>
+<tr>
+<td>openCyto → FlowKit transfer</td>
+<td>397,897 events; <strong>zero membership mismatches</strong></td>
+<td>Same fitted thresholds</td>
+</tr>
+<tr>
+<td>FSC GatingML roundtrip</td>
+<td>71 / 71 passed schema and event membership checks</td>
+<td>Supported engineering gates</td>
+</tr>
+<tr>
+<td>Author workspace replay</td>
+<td>3 workspaces, 7 matching files, 28 gates</td>
+<td>Order, subset, nesting, and parent-denominator checks passed</td>
+</tr>
+<tr>
+<td>Compensation omission control</td>
+<td>Changed membership in 3 / 7 file cases</td>
+<td>Confirms compensation can be consequential</td>
+</tr>
+<tr>
+<td>Author GatingML export</td>
+<td><strong>0 / 7 usable exports</strong></td>
+<td>Unsupported exported FlowJo strategies; original workspaces remain replayable</td>
+</tr>
+<tr>
+<td>Regression suite</td>
+<td>22 tests passed</td>
+<td>Includes membership, mapping, denominator, export, and digitized-geometry safeguards</td>
+</tr>
+<tr>
+<td>Figure geometry verification</td>
+<td>28 author panels + 71 FSC thresholds passed</td>
+<td>Drawn coordinates reproduce gate membership</td>
+</tr>
+</tbody>
+</table>
+<p><strong>These results establish engineering consistency. Biological accuracy, agreement with FlowJo, independent-donor generalization, and benefit versus an agent without this skill have not been established.</strong></p>
+<p>Downloads: <a href="assets/testing/file-results.csv">file-level results CSV</a> · <a href="assets/testing/author-gate-results.csv">author gate counts CSV</a> · <a href="assets/testing/plot-manifest.json">plot manifest</a> · <a href="assets/testing/testing-receipt.json">testing receipt</a>. The CSVs contain aggregate event counts, not event-level measurements. <a href="DATASETS.md">Source deposits and licenses</a> retain their original attribution and terms.</p>
+<h2 id="user-guided-revision-nk-her2-v1">User-guided revision: NK HER2 v1</h2>
+<p><strong>Latest reviewed example: <code>NK Cells_Her2_CAR.fcs</code>.</strong> The first two gates now follow the user’s orange line and singlet polygon. The diagonal excludes the low-FSC cluster on its left; its retained side is intersected with the original outer scatter gate. The tighter singlet gate is applied to that revised parent.</p>
+<p>The boundaries were <strong>approximately digitized from the supplied image</strong>, using its axis ticks and eight blue vertex centers. This is a manual, sample-specific development revision, not an automatic fit or an exact vector annotation. Original author gates are retained below; these fixed coordinates have not been applied to other files.</p>
+<table>
+<thead>
+<tr>
+<th>Gate</th>
+<th style="text-align:right">Original count / parent</th>
+<th style="text-align:right">Revised count / parent</th>
+<th style="text-align:right">Revised % of parent</th>
+<th style="text-align:right">Removed vs original</th>
+<th style="text-align:right">Added vs original</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No Debris</td>
+<td style="text-align:right">22,769 / 30,000</td>
+<td style="text-align:right">15,700 / 30,000</td>
+<td style="text-align:right">52.33%</td>
+<td style="text-align:right">7,069</td>
+<td style="text-align:right">0</td>
+</tr>
+<tr>
+<td>Singlets</td>
+<td style="text-align:right">21,589 / 22,769</td>
+<td style="text-align:right">14,849 / 15,700</td>
+<td style="text-align:right">94.58%</td>
+<td style="text-align:right">7,053</td>
+<td style="text-align:right">313</td>
+</tr>
+<tr>
+<td>Live</td>
+<td style="text-align:right">14,628 / 21,589</td>
+<td style="text-align:right">14,655 / 14,849</td>
+<td style="text-align:right">98.69%</td>
+<td style="text-align:right">253</td>
+<td style="text-align:right">280</td>
+</tr>
+<tr>
+<td>CAR</td>
+<td style="text-align:right">5,385 / 14,628</td>
+<td style="text-align:right">5,431 / 14,655</td>
+<td style="text-align:right">37.06%</td>
+<td style="text-align:right">81</td>
+<td style="text-align:right">127</td>
+</tr>
+</tbody>
+</table>
+<p>The revised first gate excludes <strong>7,069 additional events</strong> relative to the author gate. The drawn singlet boundary also extends beyond part of the original polygon, so it adds 313 previously excluded events while removing 7,053. Downstream membership is recalculated; it is not obtained by simply subtracting counts.</p>
+<p><strong>Live and CAR gate shapes, compensation, and transformations are unchanged.</strong> Their parent populations and denominators have been recomputed. Live/singlet is now 98.69%; CAR/live is 37.06%. These are descriptive fractions for this revision.</p>
+<p><a href="assets/testing/reviews/nk-her2-v1/revised-hierarchy.png" title="Open full-resolution figure"><img src="assets/testing/reviews/nk-her2-v1/revised-hierarchy.png" alt="User-guided revised scatter, singlet, live, and CAR gates" /></a></p>
+<details>
+<summary>Compare the original and revised first two gates</summary>
+<p><a href="assets/testing/reviews/nk-her2-v1/before-after.png" title="Open full-resolution figure"><img src="assets/testing/reviews/nk-her2-v1/before-after.png" alt="Original author gates compared with the user-guided revision" /></a></p>
+</details>
+<p>Checks passed for the first-gate half-plane rule, an independent singlet polygon calculation, unchanged downstream processing, event order, event subsets, parent containment, denominators, and plotted gate geometry.</p>
+<p><a href="assets/testing/reviews/nk-her2-v1/gate-comparison.csv">Gate comparison CSV</a> · <a href="assets/testing/reviews/nk-her2-v1/results.json">Results and coordinates</a> · <a href="assets/testing/reviews/nk-her2-v1/configuration.json">Digitization configuration</a> · <a href="assets/testing/reviews/nk-her2-v1/user-guidance.png">Original user drawing</a></p>
+<h2 id="author-gating-hierarchies">Author gating hierarchies</h2>
+<p>The CAR-NK author workspaces provide actual scatter → singlet → live → CAR hierarchies. Each four-panel figure shows only the events in that gate’s parent. Axes retain the workspace compensation and transformation settings. Click a sample name for its full-resolution figure.</p>
+<table>
+<thead>
+<tr>
+<th>Workspace</th>
+<th>File / scatterplot</th>
+<th style="text-align:right">Input events</th>
+<th style="text-align:right">Live events</th>
+<th style="text-align:right">CAR / live</th>
+<th style="text-align:right">CAR (% of live)</th>
+<th style="text-align:right">CAR events changed without compensation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Her2High.wsp</td>
+<td><a href="assets/testing/bbb346f11e2432c8.png">NK Cells_Her2_CAR.fcs</a></td>
+<td style="text-align:right">30,000</td>
+<td style="text-align:right">14,628</td>
+<td style="text-align:right">5,385 / 14,628</td>
+<td style="text-align:right">36.81%</td>
+<td style="text-align:right">254</td>
+</tr>
+<tr>
+<td>Her2High.wsp</td>
+<td><a href="assets/testing/2161b12b4a4d0f42.png">NK Cells_RNP_Her2.fcs</a></td>
+<td style="text-align:right">30,000</td>
+<td style="text-align:right">22,180</td>
+<td style="text-align:right">78 / 22,180</td>
+<td style="text-align:right">0.35%</td>
+<td style="text-align:right">32</td>
+</tr>
+<tr>
+<td>Figure1Low.wsp</td>
+<td><a href="assets/testing/4ee37b2028e7fa1d.png">Her2_CAR.fcs</a></td>
+<td style="text-align:right">15,260</td>
+<td style="text-align:right">8,185</td>
+<td style="text-align:right">758 / 8,185</td>
+<td style="text-align:right">9.26%</td>
+<td style="text-align:right">0</td>
+</tr>
+<tr>
+<td>Figure1Low.wsp</td>
+<td><a href="assets/testing/3a32dd9e27581e9d.png">RNP-NK.fcs</a></td>
+<td style="text-align:right">10,710</td>
+<td style="text-align:right">3,470</td>
+<td style="text-align:right">17 / 3,470</td>
+<td style="text-align:right">0.49%</td>
+<td style="text-align:right">0</td>
+</tr>
+<tr>
+<td>Sorting.wsp</td>
+<td><a href="assets/testing/c288af0aaaae213e.png">aftersort_APC-.fcs</a></td>
+<td style="text-align:right">376</td>
+<td style="text-align:right">310</td>
+<td style="text-align:right">1 / 310</td>
+<td style="text-align:right">0.32%</td>
+<td style="text-align:right">0</td>
+</tr>
+<tr>
+<td>Sorting.wsp</td>
+<td><a href="assets/testing/080ac4eac6e6036d.png">aftersort_APC+.fcs</a></td>
+<td style="text-align:right">76</td>
+<td style="text-align:right">38</td>
+<td style="text-align:right">37 / 38</td>
+<td style="text-align:right">97.37%</td>
+<td style="text-align:right">0</td>
+</tr>
+<tr>
+<td>Sorting.wsp</td>
+<td><a href="assets/testing/7c90276577e822f6.png">beforesort_car-NK.fcs</a></td>
+<td style="text-align:right">10,000</td>
+<td style="text-align:right">4,709</td>
+<td style="text-align:right">642 / 4,709</td>
+<td style="text-align:right">13.63%</td>
+<td style="text-align:right">7</td>
+</tr>
+</tbody>
+</table>
+<p>The 76-event <code>aftersort_APC+.fcs</code> file has only 38 live events. Its 97.37% CAR/live fraction is 37 events out of 38 and should not be interpreted as a precise product-quality estimate.</p>
+<p><strong>High-CAR example and matching RNP file</strong></p>
+<p><a href="assets/testing/bbb346f11e2432c8.png" title="Open full-resolution figure"><img src="assets/testing/bbb346f11e2432c8.png" alt="NK Cells_Her2_CAR.fcs: scatter, singlet, live, and CAR gate overlays" /></a></p>
+<p><a href="assets/testing/2161b12b4a4d0f42.png" title="Open full-resolution figure"><img src="assets/testing/2161b12b4a4d0f42.png" alt="NK Cells_RNP_Her2.fcs: scatter, singlet, live, and CAR gate overlays" /></a></p>
+<details>
+<summary>Show all seven author hierarchy figures</summary>
+<p><strong>Her2High.wsp · NK Cells_Her2_CAR.fcs</strong></p>
+<p><a href="assets/testing/bbb346f11e2432c8.png" title="Open full-resolution figure"><img src="assets/testing/bbb346f11e2432c8.png" alt="NK Cells_Her2_CAR.fcs gate hierarchy" /></a></p>
+<p><strong>Her2High.wsp · NK Cells_RNP_Her2.fcs</strong></p>
+<p><a href="assets/testing/2161b12b4a4d0f42.png" title="Open full-resolution figure"><img src="assets/testing/2161b12b4a4d0f42.png" alt="NK Cells_RNP_Her2.fcs gate hierarchy" /></a></p>
+<p><strong>Figure1Low.wsp · Her2_CAR.fcs</strong></p>
+<p><a href="assets/testing/4ee37b2028e7fa1d.png" title="Open full-resolution figure"><img src="assets/testing/4ee37b2028e7fa1d.png" alt="Her2_CAR.fcs gate hierarchy" /></a></p>
+<p><strong>Figure1Low.wsp · RNP-NK.fcs</strong></p>
+<p><a href="assets/testing/3a32dd9e27581e9d.png" title="Open full-resolution figure"><img src="assets/testing/3a32dd9e27581e9d.png" alt="RNP-NK.fcs gate hierarchy" /></a></p>
+<p><strong>Sorting.wsp · aftersort_APC-.fcs</strong></p>
+<p><a href="assets/testing/c288af0aaaae213e.png" title="Open full-resolution figure"><img src="assets/testing/c288af0aaaae213e.png" alt="aftersort_APC-.fcs gate hierarchy" /></a></p>
+<p><strong>Sorting.wsp · aftersort_APC+.fcs</strong></p>
+<p><a href="assets/testing/080ac4eac6e6036d.png" title="Open full-resolution figure"><img src="assets/testing/080ac4eac6e6036d.png" alt="aftersort_APC+.fcs gate hierarchy" /></a></p>
+<p><strong>Sorting.wsp · beforesort_car-NK.fcs</strong></p>
+<p><a href="assets/testing/7c90276577e822f6.png" title="Open full-resolution figure"><img src="assets/testing/7c90276577e822f6.png" alt="beforesort_car-NK.fcs gate hierarchy" /></a></p>
+</details>
+<h2 id="her2-car-t-engineering-gates">HER2 CAR-T engineering gates</h2>
+<p>All 71 available HER2 files have FSC-A versus SSC-A and FSC-A versus FSC-H scatterplots. The vertical pink line is the separately fitted openCyto FSC-A threshold; the selected region is to its right. The second panel is a scatter view, not an automatically fitted singlet gate. Fluorescence compensation is not used for these scatter-only gates.</p>
+<p>Retained fractions range from <strong>0.213% to 76.719%</strong>. This variation requires biological review; zero engine mismatches does not establish that appropriate cells were selected.</p>
+<p>The overview below includes 12 files spaced evenly through the sorted retained-fraction range, including both extremes. Every one of the 71 full-resolution figures is linked in the complete file index.</p>
+<p><a href="assets/testing/her2-car-t-overview.png" title="Open full-resolution figure"><img src="assets/testing/her2-car-t-overview.png" alt="HER2 scatterplot overview: low through high retained fraction" /></a></p>
+<h2 id="other-existing-data">Other existing data</h2>
+<p>The adjacent GFP, Treg, and remaining NK files have raw FSC-A/SSC-A and FSC-A/FSC-H plots. No biological gates are invented for these files. Control and derivative roles are preserved in the full index. These are supporting/raw QC views, not additional autogating validations.</p>
+<h3 id="t-cell-gfp-knockin">t-cell-gfp-knockin</h3>
+<p>67 files · 188,153 events. Overview includes up to 12 files; all files are linked below.</p>
+<p><a href="assets/testing/t-cell-gfp-knockin-overview.png" title="Open full-resolution figure"><img src="assets/testing/t-cell-gfp-knockin-overview.png" alt="t-cell-gfp-knockin scatterplot overview" /></a></p>
+<h3 id="treg-characterization">treg-characterization</h3>
+<p>8 files · 205,772 events. Overview includes up to 12 files; all files are linked below.</p>
+<p><a href="assets/testing/treg-characterization-overview.png" title="Open full-resolution figure"><img src="assets/testing/treg-characterization-overview.png" alt="treg-characterization scatterplot overview" /></a></p>
+<h3 id="car-nk-knockin">car-nk-knockin</h3>
+<p>13 files · 442,676 events. Overview includes up to 12 files; all files are linked below.</p>
+<p><a href="assets/testing/car-nk-knockin-overview.png" title="Open full-resolution figure"><img src="assets/testing/car-nk-knockin-overview.png" alt="car-nk-knockin scatterplot overview" /></a></p>
+<h2 id="complete-file-index">Complete file index</h2>
+<p>Each linked image contains actual event scatterplots. Percentages below use the named denominator; empty cells mean no gate was applied. File counts are not donor or biological-sample counts.</p>
+<details>
+<summary>car-nk-knockin: all 13 scatterplot figures and results</summary>
+<table>
+<thead>
+<tr>
+<th>File / scatterplot</th>
+<th>Source role</th>
+<th style="text-align:right">Events</th>
+<th>Analysis</th>
+<th style="text-align:right">Selected / denominator</th>
+<th style="text-align:right">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="assets/testing/bbb346f11e2432c8.png">NK Cells_Her2_CAR.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">30,000</td>
+<td>Author gate replay (live parent)</td>
+<td style="text-align:right">5,385 / 14,628</td>
+<td style="text-align:right">36.813%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/2161b12b4a4d0f42.png">NK Cells_RNP_Her2.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">30,000</td>
+<td>Author gate replay (live parent)</td>
+<td style="text-align:right">78 / 22,180</td>
+<td style="text-align:right">0.352%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/4ee37b2028e7fa1d.png">Her2_CAR.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">15,260</td>
+<td>Author gate replay (live parent)</td>
+<td style="text-align:right">758 / 8,185</td>
+<td style="text-align:right">9.261%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/3a32dd9e27581e9d.png">RNP-NK.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">10,710</td>
+<td>Author gate replay (live parent)</td>
+<td style="text-align:right">17 / 3,470</td>
+<td style="text-align:right">0.490%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/f2636c06f7149850.png">concat_1.fcs</a></td>
+<td>concatenation</td>
+<td style="text-align:right">23,127</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/d40c4cecc9941f95.png">DN8_CAR-NK_Mix.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">150,000</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/774242d71edac6ec.png">DN8_WT-NK_Mix.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">150,000</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/2558e007a4af858c.png">export_DN8_CAR-NK_Mix_Live_CAR-.fcs</a></td>
+<td>exported_subset</td>
+<td style="text-align:right">7,709</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/de409bf20713060d.png">export_DN8_CAR-NK_Mix_Live_CAR+.fcs</a></td>
+<td>exported_subset</td>
+<td style="text-align:right">7,709</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/43700b70b9d85993.png">export_DN8_WT-NK_Mix_ CD56+.fcs</a></td>
+<td>exported_subset</td>
+<td style="text-align:right">7,709</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/c288af0aaaae213e.png">aftersort_APC-.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">376</td>
+<td>Author gate replay (live parent)</td>
+<td style="text-align:right">1 / 310</td>
+<td style="text-align:right">0.323%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/080ac4eac6e6036d.png">aftersort_APC+.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">76</td>
+<td>Author gate replay (live parent)</td>
+<td style="text-align:right">37 / 38</td>
+<td style="text-align:right">97.368%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/7c90276577e822f6.png">beforesort_car-NK.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">10,000</td>
+<td>Author gate replay (live parent)</td>
+<td style="text-align:right">642 / 4,709</td>
+<td style="text-align:right">13.633%</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details>
+<summary>her2-car-t: all 71 scatterplot figures and results</summary>
+<table>
+<thead>
+<tr>
+<th>File / scatterplot</th>
+<th>Source role</th>
+<th style="text-align:right">Events</th>
+<th>Analysis</th>
+<th style="text-align:right">Selected / denominator</th>
+<th style="text-align:right">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="assets/testing/801f01ec048c8360.png">0.625ng_B7.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">17,250</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">1,861 / 17,250</td>
+<td style="text-align:right">10.788%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/afc09cd791a4de33.png">0.625ng_C7.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">21,936</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">4,306 / 21,936</td>
+<td style="text-align:right">19.630%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/89fbcd7c2f0e2b34.png">0.625ng_D7.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">17,399</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">3,015 / 17,399</td>
+<td style="text-align:right">17.329%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/5fdb23bcb94f7b32.png">0.625ng_E7.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">15,987</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">2,645 / 15,987</td>
+<td style="text-align:right">16.545%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/ecd13de4221d9350.png">0.625ng_F7 failure.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">38,093</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">20,175 / 38,093</td>
+<td style="text-align:right">52.962%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/21079b4d38d6443e.png">0.625ng_G7.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">11,436</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">1,520 / 11,436</td>
+<td style="text-align:right">13.291%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/06d2dd8b350ed5b3.png">0.3125ng_B8.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">6,442</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">598 / 6,442</td>
+<td style="text-align:right">9.283%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/7cd8a4f8c41b8a28.png">0.3125ng_C8.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">7,794</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">750 / 7,794</td>
+<td style="text-align:right">9.623%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/5803f7381d92168c.png">0.3125ng_F8.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">9,824</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">1,011 / 9,824</td>
+<td style="text-align:right">10.291%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/95466bb34b177740.png">0.3125ng_G8.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">24,552</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">4,247 / 24,552</td>
+<td style="text-align:right">17.298%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/38b15f605cbef379.png">0ng_B3.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">6,763</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">3,799 / 6,763</td>
+<td style="text-align:right">56.173%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/a0a9ec16f9977363.png">0ng_C3.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">5,621</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">3,489 / 5,621</td>
+<td style="text-align:right">62.071%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/e84f22c8d6484300.png">0ng_D3.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">6,671</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">3,307 / 6,671</td>
+<td style="text-align:right">49.573%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/d2daef157e86c9b8.png">0ng_F3.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">15,824</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">12,140 / 15,824</td>
+<td style="text-align:right">76.719%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/ae276c2aa48b81e8.png">0ng_G3.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">5,390</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">3,150 / 5,390</td>
+<td style="text-align:right">58.442%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/f3e6965fea794fcc.png">5ng_B4.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">9,845</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">1,178 / 9,845</td>
+<td style="text-align:right">11.965%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/3c18cd2f502e6129.png">5ng_C4.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">12,709</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">2,593 / 12,709</td>
+<td style="text-align:right">20.403%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/064c7ba247f1ea60.png">5ng_D4.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">8,518</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">1,105 / 8,518</td>
+<td style="text-align:right">12.973%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/e4f105bcae71d580.png">5ng_E4.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">10,224</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">1,513 / 10,224</td>
+<td style="text-align:right">14.799%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/dec141228dc03ced.png">5ng_F4.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">13,529</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">1,764 / 13,529</td>
+<td style="text-align:right">13.039%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/dd527d6097d22c6f.png">10ng_C3.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">10,877</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">1,142 / 10,877</td>
+<td style="text-align:right">10.499%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/8dec756df1ff9157.png">10ng_D3.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">7,276</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">675 / 7,276</td>
+<td style="text-align:right">9.277%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/7aee60998c2e5d1b.png">10ng_E3.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">9,949</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">1,392 / 9,949</td>
+<td style="text-align:right">13.991%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/c5225b97b857ee2d.png">10ng_F3.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">15,340</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">2,474 / 15,340</td>
+<td style="text-align:right">16.128%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/604d88ffc86073f5.png">10ng_G3.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">18,317</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">2,225 / 18,317</td>
+<td style="text-align:right">12.147%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/ad7690909cf6bf49.png">F_B8.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,004</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">6 / 1,004</td>
+<td style="text-align:right">0.598%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/59a33e93ba846e59.png">F_C8.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">964</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">4 / 964</td>
+<td style="text-align:right">0.415%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/d2ce90371cf12ff8.png">F_E8.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,017</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">4 / 1,017</td>
+<td style="text-align:right">0.393%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/639c6625e05e656f.png">F_F8.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">936</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">6 / 936</td>
+<td style="text-align:right">0.641%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/e58bc1334d4504b9.png">F_G8.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,067</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">3 / 1,067</td>
+<td style="text-align:right">0.281%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/3737c971e7591299.png">G_B9.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">941</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">6 / 941</td>
+<td style="text-align:right">0.638%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/928362c98f235c32.png">G_C9.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,150</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">7 / 1,150</td>
+<td style="text-align:right">0.609%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/b56468f25b74bd62.png">G_D9.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,006</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">11 / 1,006</td>
+<td style="text-align:right">1.093%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/b164059328bf7394.png">G_E9.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,264</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">341 / 1,264</td>
+<td style="text-align:right">26.978%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/acd1e137854515b0.png">G_F9 ok.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,475</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">27 / 1,475</td>
+<td style="text-align:right">1.831%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/356dd533ba6e976d.png">G_G9 ok.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,548</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">18 / 1,548</td>
+<td style="text-align:right">1.163%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/5901c8aa248b097a.png">H_B10.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,287</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">15 / 1,287</td>
+<td style="text-align:right">1.166%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/88ffb3d0d9c32f97.png">H_C10.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,101</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">7 / 1,101</td>
+<td style="text-align:right">0.636%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/bf02f44c15cb2e2e.png">H_D10 ok.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,461</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">6 / 1,461</td>
+<td style="text-align:right">0.411%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/bcccc6ae354b13b9.png">H_E10.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,411</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">13 / 1,411</td>
+<td style="text-align:right">0.921%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/d8cfed1ccb1ddf21.png">H_F10.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,492</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">28 / 1,492</td>
+<td style="text-align:right">1.877%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/13f5798e71ad3e25.png">A_B3.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">3,427</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">1,290 / 3,427</td>
+<td style="text-align:right">37.642%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/7bf72b87c4bb41d8.png">A_C3.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,943</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">13 / 1,943</td>
+<td style="text-align:right">0.669%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/d19df734d749819b.png">A_D3.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,466</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">4 / 1,466</td>
+<td style="text-align:right">0.273%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/6f5a596e3d92aac0.png">A_E3.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,181</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">7 / 2,181</td>
+<td style="text-align:right">0.321%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/d54863df0933ecbe.png">A_F3.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,816</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">6 / 2,816</td>
+<td style="text-align:right">0.213%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/1c07e338c82344bb.png">A_G3.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,633</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">13 / 2,633</td>
+<td style="text-align:right">0.494%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/2625a81556c9f2fc.png">B_B4.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,555</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">572 / 1,555</td>
+<td style="text-align:right">36.785%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/60c89794c1f160c6.png">B_C4.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,289</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">10 / 1,289</td>
+<td style="text-align:right">0.776%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/d6e8e5a71f029f4b.png">B_D4 good.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,356</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">14 / 2,356</td>
+<td style="text-align:right">0.594%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/aae941f53929958e.png">B_E4.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,194</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">11 / 1,194</td>
+<td style="text-align:right">0.921%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/2c3aa3b8f48ab5e0.png">B_F4.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,683</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">516 / 1,683</td>
+<td style="text-align:right">30.660%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/9db4a7bd2176af05.png">B_G4.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,541</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">28 / 1,541</td>
+<td style="text-align:right">1.817%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/0f19f62ae2569862.png">C_B5 ok.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,937</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">15 / 1,937</td>
+<td style="text-align:right">0.774%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/ccdbf81e2a7be6ac.png">C_C5.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,524</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">12 / 1,524</td>
+<td style="text-align:right">0.787%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/322a8201e2e7344a.png">C_D5.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,124</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">11 / 1,124</td>
+<td style="text-align:right">0.979%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/e27c581831cd584d.png">C_E5.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,545</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">21 / 1,545</td>
+<td style="text-align:right">1.359%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/fffb85ce8cbccb37.png">C_F5.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,055</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">10 / 2,055</td>
+<td style="text-align:right">0.487%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/24503da033e1539e.png">C_G5 ok.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,222</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">744 / 2,222</td>
+<td style="text-align:right">33.483%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/fa4674c48f2bebed.png">D_B6.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,699</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">603 / 1,699</td>
+<td style="text-align:right">35.491%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/8479c9b69986a132.png">D_C6.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,431</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">17 / 1,431</td>
+<td style="text-align:right">1.188%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/c781c5f235b4c5d0.png">D_D6.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,127</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">14 / 1,127</td>
+<td style="text-align:right">1.242%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/f61e3ab7c22ec8e6.png">D_E6 ok.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,435</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">7 / 1,435</td>
+<td style="text-align:right">0.488%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/26dcaa9c98222896.png">D_F6.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,466</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">6 / 1,466</td>
+<td style="text-align:right">0.409%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/c87e98fa57c0114a.png">D_G6.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,156</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">8 / 1,156</td>
+<td style="text-align:right">0.692%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/5cecdfa6774d90c6.png">E control_B7.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,234</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">8 / 1,234</td>
+<td style="text-align:right">0.648%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/cb5a96aebc9a5d4e.png">E control_C7.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,294</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">11 / 1,294</td>
+<td style="text-align:right">0.850%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/68dd44c79a6ae70b.png">E control_D7.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">975</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">5 / 975</td>
+<td style="text-align:right">0.513%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/8e0a2f9aceb9c350.png">E control_E7.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,573</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">7 / 1,573</td>
+<td style="text-align:right">0.445%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/668603f84a701535.png">E control_F7.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,649</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">4 / 1,649</td>
+<td style="text-align:right">0.243%</td>
+</tr>
+<tr>
+<td><a href="assets/testing/aa4426ffc9d65562.png">E control_G7.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,677</td>
+<td>openCyto FSC engineering gate (all events)</td>
+<td style="text-align:right">557 / 1,677</td>
+<td style="text-align:right">33.214%</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details>
+<summary>t-cell-gfp-knockin: all 67 scatterplot figures and results</summary>
+<table>
+<thead>
+<tr>
+<th>File / scatterplot</th>
+<th>Source role</th>
+<th style="text-align:right">Events</th>
+<th>Analysis</th>
+<th style="text-align:right">Selected / denominator</th>
+<th style="text-align:right">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="assets/testing/fc6d3d2ab9573992.png">MP230918 FACS 230925 Full Circle_Experiment_Extra Cells_G2.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">523</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/629d10e329b30bde.png">MP230918 FACS 230925 Full Circle_Experiment_Extra Cells_B2.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">543</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/aad23b0f598d9be5.png">MP230918 FACS 230925 Full Circle_Experiment_Extra Cells_C2.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">274</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/8a2950af45bda3e7.png">MP230918 FACS 230925 Full Circle_Experiment_Extra Cells_D2.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">296</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/1251b883062f9ce1.png">MP230918 FACS 230925 Full Circle_Experiment_Extra Cells_E2.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">396</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/3c3c4512fc315685.png">MP230918 FACS 230925 Full Circle_Experiment_Extra Cells_F2.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">341</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/dff2105c13fa5849.png">MP230918 FACS 230925 Full Circle_Experiment_C Failed Family_B5.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">601</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/82c69912ea454f4a.png">MP230918 FACS 230925 Full Circle_Experiment_C Failed Family_C5.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">452</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/ad8dc63a78b1ed87.png">MP230918 FACS 230925 Full Circle_Experiment_C Failed Family_D5.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">3,199</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/dc52cd09b85bec9b.png">MP230918 FACS 230925 Full Circle_Experiment_C Failed Family_E5.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">106</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/cfd48f1c61e4e242.png">MP230918 FACS 230925 Full Circle_Experiment_C Failed Family_F5.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,963</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/bbbb9b0d12f59ea6.png">MP230918 FACS 230925 Full Circle_Experiment_C Failed Family_G5.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">579</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/26eb0bf4486922f7.png">MP230918 FACS 230925 Full Circle_Experiment_Cell Test_Sample.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,549</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/92a8710db4e49656.png">MP230918 FACS 230925 Full Circle_Experiment_A Extra Family_B3.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,014</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/14d4a548e75991fa.png">MP230918 FACS 230925 Full Circle_Experiment_A Extra Family_C3.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,365</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/4fafa96056f79134.png">MP230918 FACS 230925 Full Circle_Experiment_A Extra Family_D3.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,466</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/ea348a76bf33f951.png">MP230918 FACS 230925 Full Circle_Experiment_A Extra Family_E3.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,599</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/ad6945c877f204ed.png">MP230918 FACS 230925 Full Circle_Experiment_A Extra Family_F3.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,850</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/8d7054d12c48222c.png">MP230918 FACS 230925 Full Circle_Experiment_A Extra Family_G3.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">1,237</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/2f3fdb0723450214.png">MP230918 FACS 230925 Full Circle_Experiment_OCC -_B12.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">5,167</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/88050b02381afe77.png">MP230918 FACS 230925 Full Circle_Experiment_OCC -_C12.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,615</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/46c0ba91367eb2b4.png">MP230918 FACS 230925 Full Circle_Experiment_OCC -_D12.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">3,599</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/fb520bb8fec593f5.png">MP230918 FACS 230925 Full Circle_Experiment_OCC -_E12.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">3,513</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/8639eef946247df9.png">MP230918 FACS 230925 Full Circle_Experiment_OCC -_F12.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">3,541</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/c6b5ef4a0aa760b1.png">MP230918 FACS 230925 Full Circle_Experiment_OCC -_G12.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">4,110</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/7fe3b0cf00d0239f.png">MP230918 FACS 230925 Full Circle_Experiment_OCC +_G11.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">13,656</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/3a975b8f35bbe4c2.png">MP230918 FACS 230925 Full Circle_Experiment_OCC +_B11.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,299</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/4e6170bc0e375d08.png">MP230918 FACS 230925 Full Circle_Experiment_OCC +_C11.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,131</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/cb9188523f40937a.png">MP230918 FACS 230925 Full Circle_Experiment_OCC +_D11.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,101</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/b7fa5f697f3c0f8f.png">MP230918 FACS 230925 Full Circle_Experiment_OCC +_E11.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,276</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/c96658023c752ee6.png">MP230918 FACS 230925 Full Circle_Experiment_OCC +_F11.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">5,943</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/11faa7314b8c17ca.png">MP230918 FACS 230925 Full Circle_Experiment_.6ug 500V 4ms 2pulse_B4.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">7,073</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/c672fa8e97f8bad6.png">MP230918 FACS 230925 Full Circle_Experiment_.6ug 500V 4ms 2pulse_C4.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">5,212</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/3ab2637171037a8c.png">MP230918 FACS 230925 Full Circle_Experiment_.6ug 500V 4ms 2pulse_D4.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">4,934</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/56bf1e73add538e0.png">MP230918 FACS 230925 Full Circle_Experiment_.6ug 500V 4ms 2pulse_E4.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">4,347</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/a1764278739fb0aa.png">MP230918 FACS 230925 Full Circle_Experiment_.6ug 500V 4ms 2pulse_F4.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">7,835</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/5339ccb2f6fdb640.png">MP230918 FACS 230925 Full Circle_Experiment_.6ug 500V 4ms 2pulse_G4.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">6,342</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/594e94fac97f007a.png">MP230918 FACS 230925 Full Circle_Experiment_0ug_B7.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,891</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/adacb8a149a5684f.png">MP230918 FACS 230925 Full Circle_Experiment_0ug_C7.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,717</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/d0ab5bd0839a2e7b.png">MP230918 FACS 230925 Full Circle_Experiment_0ug_D7.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,287</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/7fe0404f80cec372.png">MP230918 FACS 230925 Full Circle_Experiment_0ug_E7.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,622</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/ee0b01f6693719f1.png">MP230918 FACS 230925 Full Circle_Experiment_0ug_F7.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">3,386</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/00db94b7b99ecf13.png">MP230918 FACS 230925 Full Circle_Experiment_0ug_G7.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">5,953</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/8a6ba0de7a8d65f9.png">MP230918 FACS 230925 Full Circle_Experiment_.6 500V 2ms 2pulse_B6.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">3,829</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/8600376595bcf01e.png">MP230918 FACS 230925 Full Circle_Experiment_.6 500V 2ms 2pulse_C6.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">3,165</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/d9272e598181f62d.png">MP230918 FACS 230925 Full Circle_Experiment_.6 500V 2ms 2pulse_D6.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,821</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/215499083bb91595.png">MP230918 FACS 230925 Full Circle_Experiment_.6 500V 2ms 2pulse_E6.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,503</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/631ddf84db52245d.png">MP230918 FACS 230925 Full Circle_Experiment_.6 500V 2ms 2pulse_F6.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">3,497</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/d66527a09f3f76c9.png">MP230918 FACS 230925 Full Circle_Experiment_.6 500V 2ms 2pulse_G6.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,785</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/1afdcc9f0f68bb47.png">MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 4ms 2pulse_D9.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,209</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/94fb1468fe67c259.png">MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 4ms 2pulse_E9.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,297</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/a6493ca02848a265.png">MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 4ms 2pulse_F9.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">3,065</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/04d53d43f9280a72.png">MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 4ms 2pulse_G9.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">3,271</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/ecb92ad16fc004d4.png">MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 4ms pulse_B8.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">3,289</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/c51aaddd4975bae4.png">MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 4ms pulse_C8.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">3,245</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/5bb8b6c2505ae1e2.png">MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 4ms pulse_D8.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,875</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/cc8495121c0b16c5.png">MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 4ms pulse_E8.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">3,166</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/2b914e565f887460.png">MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 4ms pulse_F8.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">3,212</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/0409fc71c3479d6e.png">MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 4ms pulse_G8.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">5,041</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/bd8001833e4321a7.png">MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 2ms 2pulse_B10.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">779</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/bb0a62cae4c0ef6d.png">MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 2ms 2pulse_C10.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">622</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/a7a83486d8fe2327.png">MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 2ms 2pulse_D10.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">668</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/2e4c5f1846571bf7.png">MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 2ms 2pulse_E10.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">615</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/c79f7f3e60e09984.png">MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 2ms 2pulse_F10.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">639</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/bd4754a5b4478346.png">MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 2ms 2pulse_G10.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">802</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/f9be997d6bebbf12.png">MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 4ms 2pulse_B9.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,063</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/c0fbc57091666bf9.png">MP230918 FACS 230925 Full Circle_Experiment_.3ug 500V 4ms 2pulse_C9.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">2,792</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details>
+<summary>treg-characterization: all 8 scatterplot figures and results</summary>
+<table>
+<thead>
+<tr>
+<th>File / scatterplot</th>
+<th>Source role</th>
+<th style="text-align:right">Events</th>
+<th>Analysis</th>
+<th style="text-align:right">Selected / denominator</th>
+<th style="text-align:right">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="assets/testing/f54a1facad710149.png">Characterization_Regulatory-T-cells_cells_CD4-CD25-TCR-FOXP3.fcs</a></td>
+<td>unresolved_acquisition</td>
+<td style="text-align:right">10,096</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/6764021a44eaf149.png">Characterization_Regulatory-T-cells_cells_unstained.fcs</a></td>
+<td>unstained_control</td>
+<td style="text-align:right">163,262</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/8591e75bbe81fc62.png">Characterization_Regulatory-T-cells_Compensation_BL1-A.fcs</a></td>
+<td>compensation_control</td>
+<td style="text-align:right">7,531</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/19b11ad1f776bca7.png">Characterization_Regulatory-T-cells_Compensation_RL1-A.fcs</a></td>
+<td>compensation_control</td>
+<td style="text-align:right">4,833</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/fb0c475c12685143.png">Characterization_Regulatory-T-cells_Compensation_UC.fcs</a></td>
+<td>compensation_control</td>
+<td style="text-align:right">8,714</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/11045b886f6bed57.png">Characterization_Regulatory-T-cells_Compensation_VL1-A.fcs</a></td>
+<td>compensation_control</td>
+<td style="text-align:right">2,666</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/d532ae908e510d2c.png">Characterization_Regulatory-T-cells_Compensation_YL1-A.fcs</a></td>
+<td>compensation_control</td>
+<td style="text-align:right">3,318</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+<tr>
+<td><a href="assets/testing/8689974b9ebd1bec.png">Characterization_Regulatory-T-cells_Compensation_YL4-A.fcs</a></td>
+<td>compensation_control</td>
+<td style="text-align:right">5,352</td>
+<td>Raw scatter only</td>
+<td style="text-align:right">Not applied</td>
+<td style="text-align:right">Not applied</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="methods-and-limits">Methods and limits</h2>
+<ul>
+<li>
+<p><strong>Display:</strong> every event is plotted, with local density encoded by a logarithmic color scale (dark purple: sparse; yellow: dense). No event subsampling or quantile clipping is used. Author panels restrict displayed events to their actual parent gates.</p>
+</li>
+<li>
+<p><strong>Geometry:</strong> the author figures use the same preprocessing routine as pinned FlowKit’s own plotting implementation. The figure builder reapplies each gate to those coordinates and verifies exact full-event membership. Each drawn HER2 threshold is independently checked against its saved R membership.</p>
+</li>
+<li>
+<p><strong>Processing:</strong> author axes explicitly state linear/biexponential coordinates and compensation references. No second compensation is applied. Raw scatter panels use acquisition-scaled FCS values without fluorescence compensation or display transforms.</p>
+</li>
+<li>
+<p><strong>Donors:</strong> the HER2 and GFP studies share one reported source donor; Treg represents another reported donor group. NK donor identities remain unresolved. Repeated files and control/exported/concatenated data do not increase donor counts.</p>
+</li>
+<li>
+<p><strong>Excluded representations:</strong> the processed 28-patient fluorescence objects do not retain original acquisition gates. The five CyTOF pilot files are a separate modality. Neither is included in this fluorescence FCS plot set.</p>
+</li>
+<li>
+<p><strong>Missing inputs:</strong> five HER2 FCS files, one cataloged NK FCS file, and <code>tSNE.wsp</code> remain unavailable. <code>Sorting.wsp</code> additionally references <code>3days_aftersort_APC+.fcs</code>, which has no exact matching source filename in the manifest. The different <code>2days_aftersort_APC+.fcs</code> filename is never substituted.</p>
+</li>
+<li>
+<p><strong>Portability:</strong> the seven author GatingML exports fail schema validation, including unsupported FlowJo biexponential serialization, invalid XML identifiers, empty fluorochrome labels, and missing compensation references. Workspaces are replayed directly; transformations are not approximated to force export.</p>
+</li>
+<li>
+<p><strong>Validation boundary:</strong> author labels are reference candidates, not independent truth. No CAR release criterion, potency conclusion, rare-population sensitivity, or biological accuracy is inferred.</p>
+</li>
+</ul>
+<h2 id="reproduce-and-inspect-evidence">Reproduce and inspect evidence</h2>
+<p>Run from the repository root with the existing data and recorded R image available. No command below downloads data.</p>
+<pre><code class="language-sh">uv sync --locked
+uv run pytest -q
+uv run scripts/validate_existing_data.py
+uv run scripts/validate_opencyto_batch.py
+uv run scripts/apply_review_guidance.py
+uv run scripts/build_scatter_report.py
+</code></pre>
+<p>Raw FCS files, per-event memberships, logs, and invalid diagnostic XML stay under ignored <code>data/raw/</code> and <code>reports/local/</code>. Curated figures, aggregate result tables, and plot provenance are included here so this GitHub page is usable without local files. The offline gallery is <code>docs/assets/testing/index.html</code>; open it locally to search all 159 figures.</p>
+<p>The next biological test requires reconciled HER2 markers, controls, and compensation state plus expert-reviewed reference memberships. Collection remains paused, and FlowSOM remains deferred.</p>
+</main></html>

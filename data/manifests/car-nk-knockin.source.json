@@ -1,0 +1,454 @@
+{
+  "metadata": {
+    "id": "4cwny84gs2",
+    "version": 1,
+    "name": "Flow cytometry data supporting the STAR Protocol: CRISPR/Cas9- and AAV6-mediated CAR knock-in in primary human NK cells",
+    "description": "This dataset contains the flow cytometry data and associated FlowJo workspace files used to generate Figures 1\u20134 of the STAR Protocols manuscript.\nThe dataset includes original FCS files, processed/exported FCS files used for downstream analysis, and FlowJo workspace (.wsp) files containing the corresponding gating and analysis workflows.",
+    "doi": "10.17632/4cwny84gs2.1",
+    "publish_date": "2026-09-09T09:02:20.867Z",
+    "last_modification_date": "2026-09-08T21:22:51.784Z",
+    "is_confidential": false,
+    "customer": {
+      "id": "7377952c-6404-4428-bbfc-77242cfc301e",
+      "name": "Mendeley Guests"
+    },
+    "owner": {
+      "id": "01f5ae68-0a00-4809-a03c-e6277128ae8a",
+      "first_name": "Meric",
+      "last_name": "Birben",
+      "display_name": "Meric Birben",
+      "$ref": "/profiles/01f5ae68-0a00-4809-a03c-e6277128ae8a",
+      "profile": {
+        "id": "01f5ae68-0a00-4809-a03c-e6277128ae8a",
+        "orcid_id": "0000-0001-8151-3606",
+        "$ref": "/profiles/01f5ae68-0a00-4809-a03c-e6277128ae8a"
+      }
+    },
+    "categories": [
+      {
+        "id": "data.elsevier.com/vocabulary/OmniScience/Concept-249564232",
+        "label": "Flow Cytometry"
+      }
+    ],
+    "licence": {
+      "id": "01d9c749-3c4d-4431-9df3-620b2dcfe144",
+      "short_name": "CC BY 4.0",
+      "full_name": "Creative Commons Attribution 4.0 International",
+      "description": "You can share, copy and modify this dataset so long as you give appropriate credit, provide a link to the CC BY license, and indicate if changes were made, but you may not do so in a way that suggests the rights holder has endorsed you or your use of the dataset. Note that further permission may be required for any content within the dataset that is identified as belonging to a third party.",
+      "url": "http://creativecommons.org/licenses/by/4.0",
+      "category": "Creative",
+      "customer_id": null
+    },
+    "institutions": [
+      {
+        "id": "04933ab0-a8e6-4b07-b391-525132a90082",
+        "name": "Maastricht University",
+        "url": "https://www.maastrichtuniversity.nl",
+        "location": {
+          "name": "Maastricht",
+          "country": "The Netherlands",
+          "country_code": "NL",
+          "country_subdivision": "Limburg"
+        },
+        "edm:identifier": [
+          {
+            "type": "idtype:ROR",
+            "value": "https://ror.org/02jz4aj89"
+          }
+        ]
+      }
+    ],
+    "funders": [],
+    "organisational_unit_names": [],
+    "contributors": [
+      {
+        "id": "01f5ae68-0a00-4809-a03c-e6277128ae8a",
+        "first_name": "Meric",
+        "last_name": "Birben",
+        "orcid_id": "0000-0001-8151-3606",
+        "$ref": "/profiles/01f5ae68-0a00-4809-a03c-e6277128ae8a",
+        "profile": {
+          "id": "01f5ae68-0a00-4809-a03c-e6277128ae8a",
+          "orcid_id": "0000-0001-8151-3606",
+          "$ref": "/profiles/01f5ae68-0a00-4809-a03c-e6277128ae8a"
+        }
+      }
+    ],
+    "related_links": [],
+    "custom_metadata": {},
+    "is_metadata_only": false
+  },
+  "folders": [
+    {
+      "id": "94f5dbbe-25b1-4f1b-b4a1-b64e1d9a8417",
+      "name": "Her2_CAR_High",
+      "parent_id": "888e5531-1813-4d10-b306-c87eb64e6fb0",
+      "created_date": "2026-09-08T21:22:37.596"
+    },
+    {
+      "id": "9f2c2b89-79ed-4bd3-aa6c-0d6f44c88ec5",
+      "name": "Her2_CAR_Low",
+      "parent_id": "888e5531-1813-4d10-b306-c87eb64e6fb0",
+      "created_date": "2026-09-08T21:22:37.6"
+    },
+    {
+      "id": "888e5531-1813-4d10-b306-c87eb64e6fb0",
+      "name": "Figure 1",
+      "created_date": "2026-09-08T21:22:37.592"
+    },
+    {
+      "id": "4e551607-2eff-40b5-a500-82983c4e4fab",
+      "name": "Figure 2-3",
+      "created_date": "2026-09-08T21:22:37.604"
+    },
+    {
+      "id": "c6d4d530-0119-498d-9e47-0e4ff0108f82",
+      "name": "Figure 4",
+      "created_date": "2026-09-08T21:22:37.607"
+    }
+  ],
+  "files": [
+    {
+      "filename": "README.rtf",
+      "id": "158ec55f-1c2e-4564-8f07-2bbafd8d2fd4",
+      "content_details": {
+        "id": "54f7d614-2200-4f26-a40b-4c1325ae39c4",
+        "sha256_hash": "3225ba0cb9f5699ffed1530c59475f734bbbe3b1e0100706710f145a22e651db",
+        "content_type": "text/rtf",
+        "size": 3710,
+        "created_date": "2026-09-08T21:22:41.945Z",
+        "download_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/158ec55f-1c2e-4564-8f07-2bbafd8d2fd4/file_downloaded",
+        "view_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/158ec55f-1c2e-4564-8f07-2bbafd8d2fd4/file_viewed",
+        "download_expiry_time": "2126-10-18T21:49:29.109015976Z"
+      },
+      "size": 3710,
+      "last_modified_date": "2026-09-08T21:22:41.945Z",
+      "status": "COMPLETED",
+      "folder_id": "root"
+    },
+    {
+      "filename": "Her2High.wsp",
+      "id": "9403876a-077f-4df4-be48-2361d14bdf62",
+      "folder_id": "94f5dbbe-25b1-4f1b-b4a1-b64e1d9a8417",
+      "content_details": {
+        "id": "cd0ea096-e5e3-4c55-82f3-06845314e64c",
+        "sha256_hash": "0580803361b2c1bcddd1002bc9dd6449e9b4fe50bce340df7f5f7cb1b6080a1e",
+        "content_type": "application/octet-stream",
+        "size": 89927,
+        "created_date": "2026-09-08T21:22:38.264Z",
+        "download_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/9403876a-077f-4df4-be48-2361d14bdf62/file_downloaded",
+        "view_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/9403876a-077f-4df4-be48-2361d14bdf62/file_viewed",
+        "download_expiry_time": "2126-10-18T21:49:29.76492479Z"
+      },
+      "size": 89927,
+      "last_modified_date": "2026-09-08T21:22:38.264Z",
+      "status": "COMPLETED"
+    },
+    {
+      "filename": "NK Cells_Her2_CAR.fcs",
+      "id": "1eceadb8-db9b-48ab-a030-23d0c5846b63",
+      "folder_id": "94f5dbbe-25b1-4f1b-b4a1-b64e1d9a8417",
+      "content_details": {
+        "id": "65a6f549-3385-4ec9-9381-734ae52dec22",
+        "sha256_hash": "969a978ff526e47cb8c8111833523e8e33bc1733485716bf9d2a37d6f1425724",
+        "content_type": "application/octet-stream",
+        "size": 1082706,
+        "created_date": "2026-09-08T21:22:39.086Z",
+        "download_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/1eceadb8-db9b-48ab-a030-23d0c5846b63/file_downloaded",
+        "view_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/1eceadb8-db9b-48ab-a030-23d0c5846b63/file_viewed",
+        "download_expiry_time": "2126-10-18T21:49:29.764929211Z"
+      },
+      "size": 1082706,
+      "last_modified_date": "2026-09-08T21:22:39.086Z",
+      "status": "COMPLETED"
+    },
+    {
+      "filename": "NK Cells_RNP_Her2.fcs",
+      "id": "c3ecefa7-a567-4103-8602-53795ccf5bae",
+      "folder_id": "94f5dbbe-25b1-4f1b-b4a1-b64e1d9a8417",
+      "content_details": {
+        "id": "2098f289-5463-44ce-a2b4-08361a9bdec3",
+        "sha256_hash": "8bb6d826260e2b50a7e0361dfa2ba92f8c90aa0754fa6a727f263dd242db6d35",
+        "content_type": "application/octet-stream",
+        "size": 1082002,
+        "created_date": "2026-09-08T21:22:39.107Z",
+        "download_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/c3ecefa7-a567-4103-8602-53795ccf5bae/file_downloaded",
+        "view_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/c3ecefa7-a567-4103-8602-53795ccf5bae/file_viewed",
+        "download_expiry_time": "2126-10-18T21:49:29.764936001Z"
+      },
+      "size": 1082002,
+      "last_modified_date": "2026-09-08T21:22:39.107Z",
+      "status": "COMPLETED"
+    },
+    {
+      "filename": "Figure1Low.wsp",
+      "id": "a9e8f1b9-6f72-41be-b70f-38cdfc3b36ea",
+      "folder_id": "9f2c2b89-79ed-4bd3-aa6c-0d6f44c88ec5",
+      "content_details": {
+        "id": "90bffa94-62b7-4c1b-a225-4dc2f2dcca72",
+        "sha256_hash": "ddb723b4e278aa33fb0268f8c44bd3c88508d728772211977abb596d5fbf4818",
+        "content_type": "application/octet-stream",
+        "size": 138365,
+        "created_date": "2026-09-08T21:22:38.465Z",
+        "download_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/a9e8f1b9-6f72-41be-b70f-38cdfc3b36ea/file_downloaded",
+        "view_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/a9e8f1b9-6f72-41be-b70f-38cdfc3b36ea/file_viewed",
+        "download_expiry_time": "2126-10-18T21:49:30.44135084Z"
+      },
+      "size": 138365,
+      "last_modified_date": "2026-09-08T21:22:38.465Z",
+      "status": "COMPLETED"
+    },
+    {
+      "filename": "Her2_CAR.fcs",
+      "id": "b73ca4c7-0889-4a89-b170-d09a4d4adf0f",
+      "folder_id": "9f2c2b89-79ed-4bd3-aa6c-0d6f44c88ec5",
+      "content_details": {
+        "id": "c23baed9-a250-4226-a768-30649be33238",
+        "sha256_hash": "abffd87f53e67ee077562643eaaabcf6f5995c77a542c02fd4de1204c715827a",
+        "content_type": "application/octet-stream",
+        "size": 552178,
+        "created_date": "2026-09-08T21:22:38.762Z",
+        "download_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/b73ca4c7-0889-4a89-b170-d09a4d4adf0f/file_downloaded",
+        "view_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/b73ca4c7-0889-4a89-b170-d09a4d4adf0f/file_viewed",
+        "download_expiry_time": "2126-10-18T21:49:30.441371301Z"
+      },
+      "size": 552178,
+      "last_modified_date": "2026-09-08T21:22:38.762Z",
+      "status": "COMPLETED"
+    },
+    {
+      "filename": "RNP-NK.fcs",
+      "id": "a9439e2a-1f98-406c-ae3f-248566195d99",
+      "folder_id": "9f2c2b89-79ed-4bd3-aa6c-0d6f44c88ec5",
+      "content_details": {
+        "id": "61e5ac85-3c6a-440d-8a0d-8d2f7d7b5cc4",
+        "sha256_hash": "f93070c88fd0019fa81f66e2fbb0f6633d0c76d41028c5dd4b8b065b8e4800d9",
+        "content_type": "application/octet-stream",
+        "size": 388378,
+        "created_date": "2026-09-08T21:22:38.382Z",
+        "download_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/a9439e2a-1f98-406c-ae3f-248566195d99/file_downloaded",
+        "view_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/a9439e2a-1f98-406c-ae3f-248566195d99/file_viewed",
+        "download_expiry_time": "2126-10-18T21:49:30.441375061Z"
+      },
+      "size": 388378,
+      "last_modified_date": "2026-09-08T21:22:38.382Z",
+      "status": "COMPLETED"
+    },
+    {
+      "filename": "concat_1.fcs",
+      "id": "014dabcc-cef5-4091-9d92-ea206854ab26",
+      "folder_id": "4e551607-2eff-40b5-a500-82983c4e4fab",
+      "content_details": {
+        "id": "26088280-2372-48c8-ba2b-d5beaf1870f9",
+        "sha256_hash": "da4988f1d8862a65f416fec01a5acb5aa44801d81a8f2b85976c6effc5f83e9e",
+        "content_type": "application/octet-stream",
+        "size": 3056871,
+        "created_date": "2026-09-08T21:22:42.602Z",
+        "download_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/014dabcc-cef5-4091-9d92-ea206854ab26/file_downloaded",
+        "view_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/014dabcc-cef5-4091-9d92-ea206854ab26/file_viewed",
+        "download_expiry_time": "2126-10-18T21:49:31.313643605Z"
+      },
+      "size": 3056871,
+      "last_modified_date": "2026-09-08T21:22:42.602Z",
+      "status": "COMPLETED"
+    },
+    {
+      "filename": "DN8_CAR-NK_Mix.fcs",
+      "id": "5202dc1f-b85a-4ed6-8bdb-03beab0aa5cc",
+      "folder_id": "4e551607-2eff-40b5-a500-82983c4e4fab",
+      "content_details": {
+        "id": "118b4f7f-0810-4492-8bdd-02c7ebdf4764",
+        "sha256_hash": "9ce30686c4835ae93c51bab228e0eb48684a93564fa8480eab4d004a732bfabb",
+        "content_type": "application/octet-stream",
+        "size": 19208236,
+        "created_date": "2026-09-08T21:22:46.347Z",
+        "download_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/5202dc1f-b85a-4ed6-8bdb-03beab0aa5cc/file_downloaded",
+        "view_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/5202dc1f-b85a-4ed6-8bdb-03beab0aa5cc/file_viewed",
+        "download_expiry_time": "2126-10-18T21:49:31.313651425Z"
+      },
+      "size": 19208236,
+      "last_modified_date": "2026-09-08T21:22:46.347Z",
+      "status": "COMPLETED"
+    },
+    {
+      "filename": "DN8_WT-NK_Mix.fcs",
+      "id": "bd322530-31ac-4a11-b5ab-ff0f7d83c547",
+      "folder_id": "4e551607-2eff-40b5-a500-82983c4e4fab",
+      "content_details": {
+        "id": "8001514d-e9fa-4368-9e31-b286f2797657",
+        "sha256_hash": "545e021155c07626ffd08ce20ebb7f85251c154cdb32341f99850d05d675c857",
+        "content_type": "application/octet-stream",
+        "size": 19208236,
+        "created_date": "2026-09-08T21:22:46.469Z",
+        "download_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/bd322530-31ac-4a11-b5ab-ff0f7d83c547/file_downloaded",
+        "view_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/bd322530-31ac-4a11-b5ab-ff0f7d83c547/file_viewed",
+        "download_expiry_time": "2126-10-18T21:49:31.313657335Z"
+      },
+      "size": 19208236,
+      "last_modified_date": "2026-09-08T21:22:46.469Z",
+      "status": "COMPLETED"
+    },
+    {
+      "filename": "export_DN8_CAR-NK_Mix_Live_CAR-.fcs",
+      "id": "532a5798-b3e1-4c30-bee7-54901daa3756",
+      "folder_id": "4e551607-2eff-40b5-a500-82983c4e4fab",
+      "content_details": {
+        "id": "73710e74-6a15-4954-8314-70bcef78fdb3",
+        "sha256_hash": "6cbea80daba6b03c414a58700a75e08c50151dcc8bb56be4b81c272675a65ae4",
+        "content_type": "application/octet-stream",
+        "size": 9360988,
+        "created_date": "2026-09-08T21:22:44.246Z",
+        "download_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/532a5798-b3e1-4c30-bee7-54901daa3756/file_downloaded",
+        "view_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/532a5798-b3e1-4c30-bee7-54901daa3756/file_viewed",
+        "download_expiry_time": "2126-10-18T21:49:31.313662435Z"
+      },
+      "size": 9360988,
+      "last_modified_date": "2026-09-08T21:22:44.246Z",
+      "status": "COMPLETED"
+    },
+    {
+      "filename": "export_DN8_CAR-NK_Mix_Live_CAR+.fcs",
+      "id": "7e723f1c-a295-4d28-9322-aaf185046984",
+      "folder_id": "4e551607-2eff-40b5-a500-82983c4e4fab",
+      "content_details": {
+        "id": "f5d01182-e7dd-41fb-9533-a31274980f3a",
+        "sha256_hash": "f7aa33d47a49169d80990eb1aa81b198b2f3836c07b5f5c68dcd7c88c2c86074",
+        "content_type": "application/octet-stream",
+        "size": 959864,
+        "created_date": "2026-09-08T21:22:39.066Z",
+        "download_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/7e723f1c-a295-4d28-9322-aaf185046984/file_downloaded",
+        "view_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/7e723f1c-a295-4d28-9322-aaf185046984/file_viewed",
+        "download_expiry_time": "2126-10-18T21:49:31.313667545Z"
+      },
+      "size": 959864,
+      "last_modified_date": "2026-09-08T21:22:39.066Z",
+      "status": "COMPLETED"
+    },
+    {
+      "filename": "export_DN8_WT-NK_Mix_ CD56+.fcs",
+      "id": "0e6979a4-dc86-437b-b754-dff2cb5196cc",
+      "folder_id": "4e551607-2eff-40b5-a500-82983c4e4fab",
+      "content_details": {
+        "id": "f39f22f3-3f98-42b7-8bc2-3931b3e3d803",
+        "sha256_hash": "8989e4d10d4b02da2c988201e5cec9b4c62b2bb5d0879cc5283a035e16d77854",
+        "content_type": "application/octet-stream",
+        "size": 15188861,
+        "created_date": "2026-09-08T21:22:45.605Z",
+        "download_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/0e6979a4-dc86-437b-b754-dff2cb5196cc/file_downloaded",
+        "view_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/0e6979a4-dc86-437b-b754-dff2cb5196cc/file_viewed",
+        "download_expiry_time": "2126-10-18T21:49:31.313672365Z"
+      },
+      "size": 15188861,
+      "last_modified_date": "2026-09-08T21:22:45.605Z",
+      "status": "COMPLETED"
+    },
+    {
+      "filename": "tSNE.wsp",
+      "id": "38bbced5-0625-45c6-b300-9e89b818d824",
+      "folder_id": "4e551607-2eff-40b5-a500-82983c4e4fab",
+      "content_details": {
+        "id": "38781d50-1877-47fd-a2c2-bbf52f20010b",
+        "sha256_hash": "c373a189c00fee0bc9bfbc0ebbeb696982987dfe1fc014828c41cc998167c80e",
+        "content_type": "application/octet-stream",
+        "size": 657988,
+        "created_date": "2026-09-08T21:22:41.014Z",
+        "download_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/38bbced5-0625-45c6-b300-9e89b818d824/file_downloaded",
+        "view_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/38bbced5-0625-45c6-b300-9e89b818d824/file_viewed",
+        "download_expiry_time": "2126-10-18T21:49:31.313677986Z"
+      },
+      "size": 657988,
+      "last_modified_date": "2026-09-08T21:22:41.014Z",
+      "status": "COMPLETED"
+    },
+    {
+      "filename": "2days_aftersort_APC+.fcs",
+      "id": "2bb810a4-d4e1-4a59-b604-a874a9d55722",
+      "folder_id": "c6d4d530-0119-498d-9e47-0e4ff0108f82",
+      "content_details": {
+        "id": "72e922a9-685a-43bf-9d7a-9a67c77f5a3f",
+        "sha256_hash": "8c0987825ae9271eb9214be842ba4c5005e57fef468ac674e6c868c91e7a4144",
+        "content_type": "application/octet-stream",
+        "size": 362834,
+        "created_date": "2026-09-08T21:22:41.058Z",
+        "download_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/2bb810a4-d4e1-4a59-b604-a874a9d55722/file_downloaded",
+        "view_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/2bb810a4-d4e1-4a59-b604-a874a9d55722/file_viewed",
+        "download_expiry_time": "2126-10-18T21:49:31.58136014Z"
+      },
+      "size": 362834,
+      "last_modified_date": "2026-09-08T21:22:41.058Z",
+      "status": "COMPLETED"
+    },
+    {
+      "filename": "aftersort_APC-.fcs",
+      "id": "1866868b-a6e4-435e-9734-ef1d5cf2ea0a",
+      "folder_id": "c6d4d530-0119-498d-9e47-0e4ff0108f82",
+      "content_details": {
+        "id": "5912fa07-ffa8-4628-9f8a-b3a8333b7d26",
+        "sha256_hash": "ad18027d9a7f3741945bc953baa06003efc5c316ab18e740381b8a157acf2361",
+        "content_type": "application/octet-stream",
+        "size": 15986,
+        "created_date": "2026-09-08T21:22:40.895Z",
+        "download_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/1866868b-a6e4-435e-9734-ef1d5cf2ea0a/file_downloaded",
+        "view_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/1866868b-a6e4-435e-9734-ef1d5cf2ea0a/file_viewed",
+        "download_expiry_time": "2126-10-18T21:49:31.58136495Z"
+      },
+      "size": 15986,
+      "last_modified_date": "2026-09-08T21:22:40.895Z",
+      "status": "COMPLETED"
+    },
+    {
+      "filename": "aftersort_APC+.fcs",
+      "id": "bd880443-c706-464f-b288-82ea9c1afa2e",
+      "folder_id": "c6d4d530-0119-498d-9e47-0e4ff0108f82",
+      "content_details": {
+        "id": "cc5e3d1b-ffbd-49e7-a7bd-59167f36dbd2",
+        "sha256_hash": "b2064019a0f81aee27468682afb40da7756df49ca04b9fdb59c77d23a83e9048",
+        "content_type": "application/octet-stream",
+        "size": 5186,
+        "created_date": "2026-09-08T21:22:41.887Z",
+        "download_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/bd880443-c706-464f-b288-82ea9c1afa2e/file_downloaded",
+        "view_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/bd880443-c706-464f-b288-82ea9c1afa2e/file_viewed",
+        "download_expiry_time": "2126-10-18T21:49:31.58136779Z"
+      },
+      "size": 5186,
+      "last_modified_date": "2026-09-08T21:22:41.887Z",
+      "status": "COMPLETED"
+    },
+    {
+      "filename": "beforesort_car-NK.fcs",
+      "id": "28585959-8c47-43ad-afef-9b539299c839",
+      "folder_id": "c6d4d530-0119-498d-9e47-0e4ff0108f82",
+      "content_details": {
+        "id": "b84c67d8-96ff-4d84-ba4c-b788fd26cdee",
+        "sha256_hash": "d3be367a68b2b19ef31c7b31e4905bcf802c5525d223a89287d95a524f3fbd48",
+        "content_type": "application/octet-stream",
+        "size": 362802,
+        "created_date": "2026-09-08T21:22:41.036Z",
+        "download_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/28585959-8c47-43ad-afef-9b539299c839/file_downloaded",
+        "view_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/28585959-8c47-43ad-afef-9b539299c839/file_viewed",
+        "download_expiry_time": "2126-10-18T21:49:31.58137052Z"
+      },
+      "size": 362802,
+      "last_modified_date": "2026-09-08T21:22:41.036Z",
+      "status": "COMPLETED"
+    },
+    {
+      "filename": "Sorting.wsp",
+      "id": "46aef1c7-4fb0-45f0-8b95-a1d98b250e3e",
+      "folder_id": "c6d4d530-0119-498d-9e47-0e4ff0108f82",
+      "content_details": {
+        "id": "797eadef-2a47-415f-97c8-784c15a89642",
+        "sha256_hash": "583851c4f2499820f6efe009fbfa1969ab9ec783bf8047ea31617f27010b92dc",
+        "content_type": "application/octet-stream",
+        "size": 165879,
+        "created_date": "2026-09-08T21:22:40.964Z",
+        "download_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/46aef1c7-4fb0-45f0-8b95-a1d98b250e3e/file_downloaded",
+        "view_url": "https://data.mendeley.com/public-files/datasets/4cwny84gs2/files/46aef1c7-4fb0-45f0-8b95-a1d98b250e3e/file_viewed",
+        "download_expiry_time": "2126-10-18T21:49:31.58137325Z"
+      },
+      "size": 165879,
+      "last_modified_date": "2026-09-08T21:22:40.964Z",
+      "status": "COMPLETED"
+    }
+  ]
+}

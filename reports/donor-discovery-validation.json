@@ -1,0 +1,121 @@
+{
+  "checked_date": "2026-10-18",
+  "work_state": "research review and integrity checks complete",
+  "limited_dose_processed_flow": {
+    "distinct_patients": 28,
+    "product_patients": 27,
+    "pre_manufacturing_patients": 28,
+    "overlap": 27,
+    "product_cells": 66121,
+    "pbmc_cells": 118601,
+    "publisher_md5_verified_files": 3,
+    "clinical_metadata_crosscheck": {
+      "product": {
+        "clinical_yes_count": 27,
+        "object_patient_count": 27,
+        "match": true,
+        "clinical_only_ids": [],
+        "object_only_ids": []
+      },
+      "pre_manufacturing_pbmc": {
+        "clinical_yes_count": 28,
+        "object_patient_count": 28,
+        "match": true,
+        "clinical_only_ids": [],
+        "object_only_ids": []
+      }
+    },
+    "limitation": "These are processed flow cell objects, not original FCS acquisitions. Do not use them to validate debris, singlet, viability, unmixing, or original gate placement. Existing author annotations are reference candidates, not independent expert ground truth."
+  },
+  "redox_mass_cytometry": {
+    "record": "https://zenodo.org/records/11541294",
+    "archive_filename": "CAR-T_CyTOF.zip",
+    "archive_publisher_checksum": "md5:934617d8b0b29bdd5dc367420393f2b4",
+    "full_archive_checksum_verified": false,
+    "download_mode": "HTTP byte ranges; ZIP member CRC verification for fetched pilot files",
+    "network_bytes": 23273061,
+    "real_fcs_members": 38,
+    "patient_codes_in_inventory": [
+      "1903",
+      "1904",
+      "1905",
+      "1908",
+      "1909"
+    ],
+    "files_per_patient_code": {
+      "1903": 7,
+      "1904": 7,
+      "1905": 7,
+      "1908": 7,
+      "1909": 7
+    },
+    "control_or_unmapped_files": 3,
+    "study_reported_patients": 7,
+    "limitation": "Only five filename patient codes are represented in this archive. Different modality: mass cytometry, post-infusion monitoring. Do not count seven available patients, pool with fluorescence data, or claim raw/unprocessed acquisitions without processing review."
+  },
+  "redox_pilot": [
+    {
+      "patient_code": "1903",
+      "member": "CAR-T_CyTOF/20230711-1903_1908-ROS_0_0_CART1903_day14.fcs",
+      "local_path": "data/raw/redox-cytof-pilot/20230711-1903_1908-ROS_0_0_CART1903_day14.fcs",
+      "member_crc32_verified": true,
+      "sha256": "e7fb6ab5e39b07045446266e5b333f9e891bf3a7ff3bf43c37b895638ba5fdb5",
+      "events": 39728
+    },
+    {
+      "patient_code": "1904",
+      "member": "CAR-T_CyTOF/20230710-1904_1905-ROS_0_0_CART1904_day7.fcs",
+      "local_path": "data/raw/redox-cytof-pilot/20230710-1904_1905-ROS_0_0_CART1904_day7.fcs",
+      "member_crc32_verified": true,
+      "sha256": "264e5e256454784a9e4951196838b168d39a31fb4509c2dc8f54436e12b9e01b",
+      "events": 42897
+    },
+    {
+      "patient_code": "1905",
+      "member": "CAR-T_CyTOF/20230710-1904_1905-ROS_0_0_CART1905_day7.fcs",
+      "local_path": "data/raw/redox-cytof-pilot/20230710-1904_1905-ROS_0_0_CART1905_day7.fcs",
+      "member_crc32_verified": true,
+      "sha256": "4b2c9b0e266b1ced2c84079b83126d0dcac65fc4c536fe0d7b37ead8c5d8f425",
+      "events": 36146
+    },
+    {
+      "patient_code": "1908",
+      "member": "CAR-T_CyTOF/20230711-1903_1908-ROS_0_0_CART1908_day0.fcs",
+      "local_path": "data/raw/redox-cytof-pilot/20230711-1903_1908-ROS_0_0_CART1908_day0.fcs",
+      "member_crc32_verified": true,
+      "sha256": "9e2aaab725097a4f980ebd7fbc0dd5b4dc6c97336993a95439bf0c7499e25176",
+      "events": 17397
+    },
+    {
+      "patient_code": "1909",
+      "member": "CAR-T_CyTOF/20230712-1909-ROS_0_0_CART1909_day14.fcs",
+      "local_path": "data/raw/redox-cytof-pilot/20230712-1909-ROS_0_0_CART1909_day14.fcs",
+      "member_crc32_verified": true,
+      "sha256": "e614f1f11f148d14e2aca6bee0a9a7c920bd6f093e249d2c47ee89170466ed03",
+      "events": 15524
+    }
+  ],
+  "achr_encrypted_archive": {
+    "record": "https://figshare.com/articles/dataset/33059432",
+    "archive_bytes": 1004487639,
+    "archive_md5": "49aa251e199f6b1a43a6b46072abbfce",
+    "publisher_md5_matches": true,
+    "fcs_entries": 159,
+    "encrypted_fcs_entries": 159,
+    "extraction_probe": "File <ZipInfo filename='DATASET_AChR_CAAR_T_NatComm2026/fig share/Figure 1/FACS_CAAR expression comparison/fcs/TD131_AChR CAAR expression_d10_341.fcs' compress_type=deflate external_attr=0x20 file_size=1203062 compress_size=833158> is encrypted, password required for extraction",
+    "study_reported_healthy_pbmc_donors": 16,
+    "available_verified_cell_donors": null,
+    "status": "blocked_by_archive_encryption; do not count as usable donor cohort",
+    "reason": "Source study count is not a donor-to-FCS mapping. No password supplied in dataset metadata or article data availability statement."
+  },
+  "original_catalog_status": "unchanged: 165 cataloged FCS files, 159 downloaded and parsed; no new verified raw fluorescence donor cohort added",
+  "global_independent_donor_total": null,
+  "validation": {
+    "python_tests_passed": 10,
+    "python_compileall": "passed",
+    "git_diff_check": "passed",
+    "processed_source_files_reverified_after_restart": 3,
+    "pilot_sha256_reverified_after_restart": 5,
+    "r_inspection": "Completed before restart; source checksums reverified after restart. R inspection was not rerun because Docker engine was unavailable."
+  }
+}

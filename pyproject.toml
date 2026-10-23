@@ -1,0 +1,16 @@
+[project]
+name = "cell-therapy-autogating"
+version = "0.1.0"
+description = "Reviewable cell therapy flow cytometry workflow using openCyto and FlowKit"
+requires-python = ">=3.12,<3.13"
+dependencies = ["flowkit==1.3.2", "requests==2.34.2", "PyYAML==6.0.3"]
+
+[dependency-groups]
+dev = [
+    "markdown-it-py==4.2.0",
+    "matplotlib==3.11.2",
+    "pytest==9.1.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

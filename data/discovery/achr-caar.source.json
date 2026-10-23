@@ -1,0 +1,265 @@
+{
+  "files": [
+    {
+      "id": 66901223,
+      "name": "DATASET_AChR_CAAR_T_NatComm2026.zip",
+      "size": 1004487639,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/66901223",
+      "supplied_md5": "49aa251e199f6b1a43a6b46072abbfce",
+      "computed_md5": "49aa251e199f6b1a43a6b46072abbfce",
+      "mimetype": "application/zip"
+    }
+  ],
+  "folder_structure": {},
+  "authors": [
+    {
+      "id": 23940648,
+      "full_name": "Niels von Wardenburg",
+      "first_name": "Niels",
+      "last_name": "von Wardenburg",
+      "is_active": true,
+      "url_name": "Niels_von_Wardenburg",
+      "orcid_id": ""
+    },
+    {
+      "id": 24431420,
+      "full_name": "Gregorio Spagni",
+      "first_name": "Gregorio",
+      "last_name": "Spagni",
+      "is_active": true,
+      "url_name": "Gregorio_Spagni",
+      "orcid_id": ""
+    },
+    {
+      "id": 14519249,
+      "full_name": "S. Momsen Reincke",
+      "first_name": "S. Momsen",
+      "last_name": "Reincke",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 6236189,
+      "full_name": "Stephanie Wernick",
+      "first_name": "Stephanie",
+      "last_name": "Wernick",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 14519246,
+      "full_name": "Hans-Christian Kornau",
+      "first_name": "Hans-Christian",
+      "last_name": "Kornau",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 24440187,
+      "full_name": "Viktoria Zinnow",
+      "first_name": "Viktoria",
+      "last_name": "Zinnow",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 24440190,
+      "full_name": "Amelya Keles",
+      "first_name": "Amelya",
+      "last_name": "Keles",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 14519228,
+      "full_name": "Lucie Y. Li",
+      "first_name": "Lucie Y.",
+      "last_name": "Li",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 24440194,
+      "full_name": "Marie A. Homeyer",
+      "first_name": "Marie A.",
+      "last_name": "Homeyer",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 9525130,
+      "full_name": "Sonja Blumenau",
+      "first_name": "Sonja",
+      "last_name": "Blumenau",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 15139924,
+      "full_name": "Maria Stecklum",
+      "first_name": "Maria",
+      "last_name": "Stecklum",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 14277883,
+      "full_name": "Dietmar Schmitz",
+      "first_name": "Dietmar",
+      "last_name": "Schmitz",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 689811,
+      "full_name": "Andreas Pelz",
+      "first_name": "Andreas",
+      "last_name": "Pelz",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 13255524,
+      "full_name": "Valentina Damato",
+      "first_name": "Valentina",
+      "last_name": "Damato",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 24440196,
+      "full_name": "Nicholas Sanderson",
+      "first_name": "Nicholas",
+      "last_name": "Sanderson",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 24440220,
+      "full_name": "Tobias Derfuss",
+      "first_name": "Tobias",
+      "last_name": "Derfuss",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 24440223,
+      "full_name": "Minh C. Pham",
+      "first_name": "Minh",
+      "last_name": "C. Pham",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 46731,
+      "full_name": "Andreas Meisel",
+      "first_name": "Andreas",
+      "last_name": "Meisel",
+      "is_active": false,
+      "url_name": "Andreas_Meisel",
+      "orcid_id": ""
+    },
+    {
+      "id": 14027461,
+      "full_name": "Kevin C. O\u2019Connor",
+      "first_name": "Kevin C.",
+      "last_name": "O\u2019Connor",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": "0000-0002-7056-419X"
+    },
+    {
+      "id": 280928,
+      "full_name": "Harald Pr\u00fcss",
+      "first_name": "Harald",
+      "last_name": "Pr\u00fcss",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    }
+  ],
+  "custom_fields": [],
+  "figshare_url": "https://figshare.com/articles/dataset/Dataset_of_the_results_reported_in_the_paper_NCOMMS-26-020694/33059432",
+  "download_disabled": false,
+  "description": "<p dir=\"ltr\">Development of chimeric autoantibody receptor (CAAR) T cells targeting AChR-specific B cells.</p>",
+  "funding": null,
+  "funding_list": [],
+  "version": 1,
+  "status": "public",
+  "size": 1004487639,
+  "created_date": "2026-07-22T19:02:44Z",
+  "modified_date": "2026-07-22T19:02:44Z",
+  "is_public": true,
+  "is_confidential": false,
+  "is_metadata_record": false,
+  "confidential_reason": "",
+  "metadata_reason": "",
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "tags": [
+    "Chimeric Antigen Receptor (CAR) T cell therapy",
+    "myasthenia (myasthenia gravis\u2014MG)"
+  ],
+  "keywords": [
+    "Chimeric Antigen Receptor (CAR) T cell therapy",
+    "myasthenia (myasthenia gravis\u2014MG)"
+  ],
+  "categories": [
+    {
+      "id": 24613,
+      "title": "Autoimmunity",
+      "parent_id": 24604,
+      "path": "/24457/24604/24613",
+      "source_id": "320403",
+      "taxonomy_id": 100
+    }
+  ],
+  "references": [],
+  "has_linked_file": false,
+  "citation": "von Wardenburg, Niels; Spagni, Gregorio; Reincke, S. Momsen; Wernick, Stephanie; Kornau, Hans-Christian; Zinnow, Viktoria; et al. (2026). Dataset of the results reported in the paper NCOMMS-26-020694. figshare. Dataset. https://doi.org/10.6084/m9.figshare.33059432.v1",
+  "related_materials": [],
+  "is_embargoed": false,
+  "embargo_date": null,
+  "embargo_type": null,
+  "embargo_title": "",
+  "embargo_reason": "",
+  "embargo_options": [],
+  "id": 33059432,
+  "title": "Dataset of the results reported in the paper NCOMMS-26-020694",
+  "doi": "10.6084/m9.figshare.33059432.v1",
+  "handle": "",
+  "url": "https://api.figshare.com/v2/articles/33059432",
+  "published_date": "2026-07-22T19:02:44Z",
+  "thumb": "",
+  "defined_type": 3,
+  "defined_type_name": "dataset",
+  "group_id": null,
+  "url_private_api": "https://api.figshare.com/v2/account/articles/33059432",
+  "url_public_api": "https://api.figshare.com/v2/articles/33059432",
+  "url_private_html": "https://figshare.com/account/articles/33059432",
+  "url_public_html": "https://figshare.com/articles/dataset/Dataset_of_the_results_reported_in_the_paper_NCOMMS-26-020694/33059432",
+  "timeline": {
+    "posted": "2026-07-22T19:02:44"
+  },
+  "resource_title": null,
+  "resource_doi": null
+}

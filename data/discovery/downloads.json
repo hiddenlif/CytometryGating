@@ -1,0 +1,45 @@
+{
+  "checked_date": "2026-10-18",
+  "files": [
+    {
+      "dataset": "limited-dose-processed",
+      "filename": "clinical_metadata_Yousefian_etal_2026.csv",
+      "path": "data/raw/limited-dose-processed/clinical_metadata_Yousefian_etal_2026.csv",
+      "url": "https://zenodo.org/api/records/14711865/files/clinical_metadata_Yousefian_etal_2026.csv/content",
+      "bytes": 4417,
+      "checksum_algorithm": "md5",
+      "checksum": "c1fddb04e1e20293a7876ce66216a71b",
+      "representation": "clinical_metadata"
+    },
+    {
+      "dataset": "limited-dose-processed",
+      "filename": "Fig1_C_CARproduct_overview_sketched_sobj.rds",
+      "path": "data/raw/limited-dose-processed/Fig1_C_CARproduct_overview_sketched_sobj.rds",
+      "url": "https://zenodo.org/api/records/14711865/files/Fig1_C_CARproduct_overview_sketched_sobj.rds/content",
+      "bytes": 58684174,
+      "checksum_algorithm": "md5",
+      "checksum": "fc0091de022fc84e11f6b01ecc8fc85f",
+      "representation": "author_processed_sketched_flow_object"
+    },
+    {
+      "dataset": "limited-dose-processed",
+      "filename": "Fig3_A_premanufacturing_PBMCs_sketched_sobj.rds",
+      "path": "data/raw/limited-dose-processed/Fig3_A_premanufacturing_PBMCs_sketched_sobj.rds",
+      "url": "https://zenodo.org/api/records/14711865/files/Fig3_A_premanufacturing_PBMCs_sketched_sobj.rds/content",
+      "bytes": 100057092,
+      "checksum_algorithm": "md5",
+      "checksum": "1239dbb07f6b02242c2b8164d96180b7",
+      "representation": "author_processed_sketched_flow_object"
+    },
+    {
+      "dataset": "achr-caar-t",
+      "filename": "DATASET_AChR_CAAR_T_NatComm2026.zip",
+      "path": "data/raw/achr-caar-t/DATASET_AChR_CAAR_T_NatComm2026.zip",
+      "url": "https://ndownloader.figshare.com/files/66901223",
+      "bytes": 1004487639,
+      "checksum_algorithm": "md5",
+      "checksum": "49aa251e199f6b1a43a6b46072abbfce",
+      "representation": "encrypted_archive_audit_only"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+name: Validate engineering workflow
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  python-regression:
+    runs-on: ubuntu-24.04-arm
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Build hash-locked Python test environment
+        run: docker build -f docker/Dockerfile.python -t cytometry-tests:ci .
+      - name: Run regression tests without network or writable source
+        run: >-
+          docker run --rm --network none --read-only
+          --cap-drop ALL --security-opt no-new-privileges
+          --tmpfs /tmp:rw,nosuid,nodev,size=256m
+          cytometry-tests:ci
+      - name: Verify tracked report assets and source bindings
+        run: python3 scripts/check_report_assets.py

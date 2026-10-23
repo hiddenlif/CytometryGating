@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cytometry gating"
+  short_description: "Inspect and evaluate cell therapy gating workflows"
+  default_prompt: "Use $cell-therapy-autogating to inspect these FCS files and prepare a reviewable gating analysis."

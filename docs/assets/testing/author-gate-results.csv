@@ -1,0 +1,29 @@
+sample,workspace,gate,parent,count,parent_count,percent_of_parent,events_plotted,geometry_membership_verified,compensation_omission_membership_changes
+NK Cells_Her2_CAR.fcs,Her2High.wsp,No Debris,root,22769,30000,75.89666666666666,30000,True,0
+NK Cells_Her2_CAR.fcs,Her2High.wsp,Singlets,No Debris,21589,22769,94.81751504238218,22769,True,0
+NK Cells_Her2_CAR.fcs,Her2High.wsp,Live,Singlets,14628,21589,67.75672796331465,21589,True,2
+NK Cells_Her2_CAR.fcs,Her2High.wsp,CAR,Live,5385,14628,36.8129614438064,14628,True,254
+NK Cells_RNP_Her2.fcs,Her2High.wsp,No Debris,root,27082,30000,90.27333333333333,30000,True,0
+NK Cells_RNP_Her2.fcs,Her2High.wsp,Singlets,No Debris,25127,27082,92.78118307362824,27082,True,0
+NK Cells_RNP_Her2.fcs,Her2High.wsp,Live,Singlets,22180,25127,88.2715803717117,25127,True,4
+NK Cells_RNP_Her2.fcs,Her2High.wsp,CAR,Live,78,22180,0.35166816952209196,22180,True,32
+Her2_CAR.fcs,Figure1Low.wsp,Cells,root,12184,15260,79.84272608125819,15260,True,0
+Her2_CAR.fcs,Figure1Low.wsp,Singlets,Cells,11286,12184,92.62967826657912,12184,True,0
+Her2_CAR.fcs,Figure1Low.wsp,Live,Singlets,8185,11286,72.52348041821726,11286,True,0
+Her2_CAR.fcs,Figure1Low.wsp,CAR,Live,758,8185,9.260843005497861,8185,True,0
+RNP-NK.fcs,Figure1Low.wsp,Cells,root,7683,10710,71.73669467787114,10710,True,0
+RNP-NK.fcs,Figure1Low.wsp,Singlets,Cells,7227,7683,94.06481843030066,7683,True,0
+RNP-NK.fcs,Figure1Low.wsp,Live,Singlets,3470,7227,48.0143904801439,7227,True,0
+RNP-NK.fcs,Figure1Low.wsp,CAR,Live,17,3470,0.4899135446685879,3470,True,0
+aftersort_APC+.fcs,Sorting.wsp,No Debris,root,61,76,80.26315789473684,76,True,0
+aftersort_APC+.fcs,Sorting.wsp,Singlets,No Debris,59,61,96.72131147540983,61,True,0
+aftersort_APC+.fcs,Sorting.wsp,Live,Singlets,38,59,64.40677966101696,59,True,0
+aftersort_APC+.fcs,Sorting.wsp,CAR,Live,37,38,97.36842105263158,38,True,0
+aftersort_APC-.fcs,Sorting.wsp,No Debris,root,353,376,93.88297872340425,376,True,0
+aftersort_APC-.fcs,Sorting.wsp,Singlets,No Debris,344,353,97.45042492917847,353,True,0
+aftersort_APC-.fcs,Sorting.wsp,Live,Singlets,310,344,90.11627906976744,344,True,0
+aftersort_APC-.fcs,Sorting.wsp,CAR,Live,1,310,0.3225806451612903,310,True,0
+beforesort_car-NK.fcs,Sorting.wsp,No Debris,root,8720,10000,87.2,10000,True,0
+beforesort_car-NK.fcs,Sorting.wsp,Singlets,No Debris,8295,8720,95.12614678899082,8720,True,0
+beforesort_car-NK.fcs,Sorting.wsp,Live,Singlets,4709,8295,56.76913803496082,8295,True,2
+beforesort_car-NK.fcs,Sorting.wsp,CAR,Live,642,4709,13.633467827564239,4709,True,7

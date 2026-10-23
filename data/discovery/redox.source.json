@@ -1,0 +1,241 @@
+{
+  "created": "2025-05-08T16:22:26.129919+00:00",
+  "modified": "2025-05-08T16:22:26.800329+00:00",
+  "id": 11541294,
+  "conceptrecid": "11541293",
+  "doi": "10.5281/zenodo.11541294",
+  "conceptdoi": "10.5281/zenodo.11541293",
+  "doi_url": "https://doi.org/10.5281/zenodo.11541294",
+  "metadata": {
+    "title": "Single-cell signaling network profiling during redox stress reveals dynamic redox regulation in immune cells",
+    "doi": "10.5281/zenodo.11541294",
+    "publication_date": "2025",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "WANG, YI CHUAN",
+        "affiliation": null
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "11541293"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Single-cell signaling network profiling during redox stress reveals dynamic redox regulation in immune cells",
+  "links": {
+    "self": "https://zenodo.org/api/records/11541294",
+    "self_html": "https://zenodo.org/records/11541294",
+    "preview_html": "https://zenodo.org/records/11541294?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.11541294",
+    "self_doi": "https://doi.org/10.5281/zenodo.11541294",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.11541294",
+    "reserve_doi": "https://zenodo.org/api/records/11541294/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/11541293",
+    "parent_html": "https://zenodo.org/records/11541293",
+    "parent_doi": "https://doi.org/10.5281/zenodo.11541293",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.11541293",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:11541294/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:11541294/sequence/default",
+    "files": "https://zenodo.org/api/records/11541294/files",
+    "media_files": "https://zenodo.org/api/records/11541294/media-files",
+    "latest": "https://zenodo.org/api/records/11541294/versions/latest",
+    "latest_html": "https://zenodo.org/records/11541294/latest",
+    "versions": "https://zenodo.org/api/records/11541294/versions",
+    "draft": "https://zenodo.org/api/records/11541294/draft",
+    "access_links": "https://zenodo.org/api/records/11541294/access/links",
+    "access_grants": "https://zenodo.org/api/records/11541294/access/grants",
+    "access_users": "https://zenodo.org/api/records/11541294/access/users",
+    "access_request": "https://zenodo.org/api/records/11541294/access/request",
+    "access": "https://zenodo.org/api/records/11541294/access",
+    "communities": "https://zenodo.org/api/records/11541294/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/11541294/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/11541294/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/11541294/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/11541294/quota-increase",
+    "requests": "https://zenodo.org/api/records/11541294/requests"
+  },
+  "updated": "2025-05-08T16:22:26.800329+00:00",
+  "recid": "11541294",
+  "revision": 3,
+  "files": [
+    {
+      "id": "34852ca9-46ba-4b24-b87d-0426c0417022",
+      "key": "MC38_CyTOF.zip",
+      "size": 752724,
+      "checksum": "md5:289d0cd234c789b160f64b5e6e7513c8",
+      "links": {
+        "self": "https://zenodo.org/api/records/11541294/files/MC38_CyTOF.zip/content"
+      }
+    },
+    {
+      "id": "e4aee474-ce3d-47a0-b97b-f09aa2f74904",
+      "key": "Hemodialysis_CyTOF.zip",
+      "size": 1587286432,
+      "checksum": "md5:16e1513cb87055b23c084372b61e30bd",
+      "links": {
+        "self": "https://zenodo.org/api/records/11541294/files/Hemodialysis_CyTOF.zip/content"
+      }
+    },
+    {
+      "id": "7080cf70-fba6-4a35-8118-2dd429f9c797",
+      "key": "APX2009_cytokine_fcs.zip",
+      "size": 17541819,
+      "checksum": "md5:537d5dd973218133f3abca38f36ff6bd",
+      "links": {
+        "self": "https://zenodo.org/api/records/11541294/files/APX2009_cytokine_fcs.zip/content"
+      }
+    },
+    {
+      "id": "6d358ac6-e4ac-4c54-b595-c53913bed010",
+      "key": "APX2009_CyTOF.zip",
+      "size": 1253307068,
+      "checksum": "md5:306d3428b79aa6ce70d1976f8e58f3b5",
+      "links": {
+        "self": "https://zenodo.org/api/records/11541294/files/APX2009_CyTOF.zip/content"
+      }
+    },
+    {
+      "id": "602f7a69-91be-4f15-b546-401299e3d738",
+      "key": "OT-1_mitotracker_fcs.zip",
+      "size": 6884667,
+      "checksum": "md5:7cb65dcd5115a4f6cd49f68776540c7c",
+      "links": {
+        "self": "https://zenodo.org/api/records/11541294/files/OT-1_mitotracker_fcs.zip/content"
+      }
+    },
+    {
+      "id": "6c529db4-3f48-4f0b-8482-f50fe0775ca5",
+      "key": "screen antibodies_fcs.zip",
+      "size": 584568640,
+      "checksum": "md5:543fe45f6706f43b42af461f82f1d413",
+      "links": {
+        "self": "https://zenodo.org/api/records/11541294/files/screen%20antibodies_fcs.zip/content"
+      }
+    },
+    {
+      "id": "d4d9ea84-6337-4bda-b5fd-d9d56e464af8",
+      "key": "OT-1_CyTOF.zip",
+      "size": 105641192,
+      "checksum": "md5:b7cb0e76b84a0e29ae81e70ffa0379c6",
+      "links": {
+        "self": "https://zenodo.org/api/records/11541294/files/OT-1_CyTOF.zip/content"
+      }
+    },
+    {
+      "id": "3a3dc307-220d-4412-8da1-3aa63ff584d3",
+      "key": "LCMV_CyTOF.zip",
+      "size": 149520700,
+      "checksum": "md5:fa73159339b60ccce05a014657c9749e",
+      "links": {
+        "self": "https://zenodo.org/api/records/11541294/files/LCMV_CyTOF.zip/content"
+      }
+    },
+    {
+      "id": "bbba94bf-27dd-40ca-ac2b-9a7b8d732f9a",
+      "key": "N-AC_CyTOF.zip",
+      "size": 732692353,
+      "checksum": "md5:8388f9b18ff27b95b56202bfbfe41768",
+      "links": {
+        "self": "https://zenodo.org/api/records/11541294/files/N-AC_CyTOF.zip/content"
+      }
+    },
+    {
+      "id": "f3821da8-a2bd-4c05-9b12-92fc3aef6b0b",
+      "key": "Hypoxia_CyTOF.zip",
+      "size": 529491909,
+      "checksum": "md5:f2436a7253be4ec65c7d6c8aec6c27cd",
+      "links": {
+        "self": "https://zenodo.org/api/records/11541294/files/Hypoxia_CyTOF.zip/content"
+      }
+    },
+    {
+      "id": "77c938dc-43f2-45fc-be44-e36102c2115e",
+      "key": "cell line_hypoxia_fcs.zip",
+      "size": 349406,
+      "checksum": "md5:184e390f20d16fbadafaa8ce8d79f38b",
+      "links": {
+        "self": "https://zenodo.org/api/records/11541294/files/cell%20line_hypoxia_fcs.zip/content"
+      }
+    },
+    {
+      "id": "917b6848-5a03-4ef1-bdec-c79b40dda6ea",
+      "key": "Hypoxia_DREVI_fcs.zip",
+      "size": 272726381,
+      "checksum": "md5:96fcf40dda3e2d0d9906d50ba6a0f279",
+      "links": {
+        "self": "https://zenodo.org/api/records/11541294/files/Hypoxia_DREVI_fcs.zip/content"
+      }
+    },
+    {
+      "id": "382579b4-e8d9-4ab4-ba0a-ad097b486daf",
+      "key": "HCC_CyTOF.zip",
+      "size": 44114814,
+      "checksum": "md5:5951462cfa50521f715d97625e3b0059",
+      "links": {
+        "self": "https://zenodo.org/api/records/11541294/files/HCC_CyTOF.zip/content"
+      }
+    },
+    {
+      "id": "31154402-d051-4ada-9a29-6b4b3bb73a84",
+      "key": "healthy human whole blood_CyTOF.zip",
+      "size": 442253598,
+      "checksum": "md5:8b875590d726ca97014450e0812f5aba",
+      "links": {
+        "self": "https://zenodo.org/api/records/11541294/files/healthy%20human%20whole%20blood_CyTOF.zip/content"
+      }
+    },
+    {
+      "id": "56c5d2bb-4aef-412b-ae80-249e7241f8e9",
+      "key": "CAR-T_CyTOF.zip",
+      "size": 733494397,
+      "checksum": "md5:934617d8b0b29bdd5dc367420393f2b4",
+      "links": {
+        "self": "https://zenodo.org/api/records/11541294/files/CAR-T_CyTOF.zip/content"
+      }
+    },
+    {
+      "id": "f7ac9922-4ac5-4fe1-b015-6dff04fd34ed",
+      "key": "sepsis prediction code.zip",
+      "size": 9430,
+      "checksum": "md5:966189593c1d22587c17923c49252835",
+      "links": {
+        "self": "https://zenodo.org/api/records/11541294/files/sepsis%20prediction%20code.zip/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "1122560"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 768,
+    "unique_downloads": 765,
+    "views": 168,
+    "unique_views": 141,
+    "version_downloads": 768,
+    "version_unique_downloads": 765,
+    "version_unique_views": 141,
+    "version_views": 168
+  },
+  "state": "done",
+  "submitted": true
+}
