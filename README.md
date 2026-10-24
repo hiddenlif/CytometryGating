@@ -1,4 +1,4 @@
-# Cytometry gating
+# Cytometry Gating: Public FCS Engineering and Gate Transfer
 
 An early development repository for reviewable cell therapy flow cytometry analysis with **openCyto** and **FlowKit**. The initial application is CAR-T process development and characterization. CAR-NK and other T-cell datasets are separate compatibility cohorts.
 
