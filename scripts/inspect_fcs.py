@@ -1,4 +1,5 @@
 """Inventory downloaded FCS files without assigning biological populations."""
+
 from __future__ import annotations
 
 import argparse
@@ -22,12 +23,20 @@ def inspect_file(path):
     fingerprint.update(json.dumps([list(events.shape), sample.pnn_labels]).encode())
     fingerprint.update(np.ascontiguousarray(events, dtype="<f8").tobytes())
     return {
-        "events": int(events.shape[0]), "channel_count": int(events.shape[1]),
-        "channels": [{"detector": a, "marker": b} for a, b in zip(sample.pnn_labels, sample.pns_labels)],
+        "events": int(events.shape[0]),
+        "channel_count": int(events.shape[1]),
+        "channels": [
+            {"detector": a, "marker": b}
+            for a, b in zip(sample.pnn_labels, sample.pns_labels)
+        ],
         "event_matrix_sha256": fingerprint.hexdigest(),
         "nonfinite_values": int((~np.isfinite(events)).sum()),
-        "spillover_keyword_present": any(k.lower() in {"spillover", "spill", "$spillover", "$spill"} for k in metadata),
-        "acquisition_date": metadata.get("date"), "instrument": metadata.get("cyt"),
+        "spillover_keyword_present": any(
+            k.lower() in {"spillover", "spill", "$spillover", "$spill"}
+            for k in metadata
+        ),
+        "acquisition_date": metadata.get("date"),
+        "instrument": metadata.get("cyt"),
         "biological_sample_identity": "unresolved",
         "compensation_or_unmixing_status": "unresolved; metadata presence alone does not establish processing state",
     }
@@ -35,8 +44,14 @@ def inspect_file(path):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=ROOT / "reports/local/fcs-inventory.json")
-    parser.add_argument("--dataset", action="append", help="Restrict inventory to dataset IDs; repeat to select several")
+    parser.add_argument(
+        "--output", type=Path, default=ROOT / "reports/local/fcs-inventory.json"
+    )
+    parser.add_argument(
+        "--dataset",
+        action="append",
+        help="Restrict inventory to dataset IDs; repeat to select several",
+    )
     args = parser.parse_args()
     manifest = json.loads((ROOT / "data/manifests/public-files.json").read_text())
     known = {d["id"] for d in manifest["datasets"]}
@@ -49,7 +64,10 @@ def main():
         if not source["filename"].lower().endswith(".fcs"):
             continue
         path = ROOT / source["path"]
-        row = {k: source[k] for k in ["dataset", "filename", "path", "role", "donor_id", "biosample_id"]}
+        row = {
+            k: source[k]
+            for k in ["dataset", "filename", "path", "role", "donor_id", "biosample_id"]
+        }
         if not path.exists():
             row["status"] = "not_downloaded"
         else:
@@ -65,13 +83,19 @@ def main():
         groups.setdefault(row["event_matrix_sha256"], []).append(row["path"])
     result = {
         "flowkit_version": importlib.metadata.version("flowkit"),
-        "cataloged_fcs_files": len(rows), "parsed_fcs_files": len(parsed),
+        "cataloged_fcs_files": len(rows),
+        "parsed_fcs_files": len(parsed),
         "distinct_ordered_event_matrices": len(groups),
         "duplicate_event_matrices": [g for g in groups.values() if len(g) > 1],
-        "unique_donors": None, "unique_biological_samples": None,
-        "source_reported_donor_groups_for_first_three_deposits": sorted({
-            d["source_reported_donor_group"] for d in manifest["datasets"] if "source_reported_donor_group" in d
-        }),
+        "unique_donors": None,
+        "unique_biological_samples": None,
+        "source_reported_donor_groups_for_first_three_deposits": sorted(
+            {
+                d["source_reported_donor_group"]
+                for d in manifest["datasets"]
+                if "source_reported_donor_group" in d
+            }
+        ),
         "limitation": "Distinct event matrices do not establish independent samples. Exported subsets and controls remain separate roles. Event fingerprints are order-sensitive.",
         "files": rows,
     }

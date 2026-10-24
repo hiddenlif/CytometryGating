@@ -4,16 +4,22 @@ from pathlib import Path
 
 import pytest
 
-spec = importlib.util.spec_from_file_location("fetch_public_data", Path(__file__).parents[1] / "scripts/fetch_public_data.py")
+spec = importlib.util.spec_from_file_location(
+    "fetch_public_data", Path(__file__).parents[1] / "scripts/fetch_public_data.py"
+)
 fetcher = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(fetcher)
 
 
 def row_for(payload):
     return {
-        "dataset": "fixture", "filename": "example.fcs", "path": "data/raw/fixture/example.fcs",
-        "url": "https://example.invalid/example.fcs", "bytes": len(payload),
-        "checksum_algorithm": "sha256", "checksum": hashlib.sha256(payload).hexdigest(),
+        "dataset": "fixture",
+        "filename": "example.fcs",
+        "path": "data/raw/fixture/example.fcs",
+        "url": "https://example.invalid/example.fcs",
+        "bytes": len(payload),
+        "checksum_algorithm": "sha256",
+        "checksum": hashlib.sha256(payload).hexdigest(),
     }
 
 
@@ -35,8 +41,12 @@ def test_destination_cannot_escape_raw_directory(tmp_path, monkeypatch):
         fetcher.fetch(row)
 
 
-@pytest.mark.parametrize("payload,accepted", [(b"expected", True), (b"tampered", False)])
-def test_download_checksum_controls_publication(tmp_path, monkeypatch, payload, accepted):
+@pytest.mark.parametrize(
+    "payload,accepted", [(b"expected", True), (b"tampered", False)]
+)
+def test_download_checksum_controls_publication(
+    tmp_path, monkeypatch, payload, accepted
+):
     monkeypatch.setattr(fetcher, "ROOT", tmp_path)
 
     class Response:

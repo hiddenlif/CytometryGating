@@ -1,4 +1,5 @@
 """Inspect available author workspace structures without executing their gates."""
+
 import json
 from pathlib import Path
 
@@ -20,13 +21,19 @@ def main():
                 workspace = fk.Workspace(str(path), load_missing_file_data=True)
                 sample_ids = workspace.get_sample_ids(loaded_only=False)
                 record.update(
-                    status="parsed_structure_only", sample_references=len(sample_ids),
+                    status="parsed_structure_only",
+                    sample_references=len(sample_ids),
                     gate_counts=[len(workspace.get_gate_ids(s)) for s in sample_ids],
                 )
                 if not sample_ids:
-                    record.update(status="no_sample_references", error="No usable sample references were parsed")
+                    record.update(
+                        status="no_sample_references",
+                        error="No usable sample references were parsed",
+                    )
             except Exception as exc:
-                record.update(status="parse_failed", error=f"{type(exc).__name__}: {exc}")
+                record.update(
+                    status="parse_failed", error=f"{type(exc).__name__}: {exc}"
+                )
         records.append(record)
     output = ROOT / "reports/local/workspaces.json"
     output.parent.mkdir(parents=True, exist_ok=True)

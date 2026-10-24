@@ -1,0 +1,13 @@
+# Linted and formatted with ruff using its default rules. The per-file exceptions below are deliberate.
+
+# reports/upload-validation.json binds this script by SHA-256 to a recorded validation run, so it is kept byte-for-byte.
+extend-exclude = ["scripts/verify_gate_transfer.py"]
+
+[lint.per-file-ignores]
+# Batch scripts record a per-file failure and continue with the remaining files.
+"scripts/fetch_public_data.py" = ["BLE001"]
+"scripts/inspect_fcs.py" = ["BLE001"]
+"scripts/inspect_workspaces.py" = ["BLE001"]
+"scripts/validate_opencyto_batch.py" = ["BLE001"]
+# Input validation raises ValueError for every invalid argument.
+"scripts/build_scatter_report.py" = ["TRY004"]

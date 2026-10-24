@@ -1,4 +1,5 @@
 """Retrieve explicitly selected discovery files using the shared integrity checks."""
+
 import argparse
 import json
 from pathlib import Path
